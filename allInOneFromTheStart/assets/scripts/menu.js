@@ -47,7 +47,9 @@ export class NavMenu {
 
       
         const container = document.getElementById("accordion");
+        const contentCourse = document.getElementById("contentCourses");
         container.innerHTML = "";
+        contentCourse.innerHTML = "";
         
         getData("./JSON/cursos.json").then((response) => {
           const javaScript = response.availableCourses[1].content;
@@ -76,6 +78,22 @@ export class NavMenu {
                 panel.appendChild(panelBody);
                 container.appendChild(panel);
             }else {
+              let article = document.createElement('article');
+              let title = document.createElement('h2');
+              let paragraph = document.createElement('p');
+              paragraph.innerHTML = `${item.paragraph}`;
+              title.innerHTML = `${item.contentName}`;
+              article.appendChild(title);
+              article.appendChild(paragraph);
+              if(item.contentName =="Objetivos"){
+                article.classList.add('goalsCourse');
+                article.id = `${item.contentName}` ;
+              }else{
+                article.classList.add('contentCourseArticle');
+                article.id = `${item.contentName}` ;
+
+              }
+              contentCourse.appendChild(article);
               let pIndex = array.findIndex(obj => obj.item_id === item.parent_id);
               let parent = array[pIndex];
               let subDiv = document.createElement('div');
@@ -87,5 +105,7 @@ export class NavMenu {
       });
   }
 }
+
+
 
 

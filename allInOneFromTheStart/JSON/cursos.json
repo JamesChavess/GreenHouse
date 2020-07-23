@@ -6,11 +6,11 @@
             "link": "http://",
             "likes": 71452,
             "comments": 57,
-            "navOptions":[
+            "navOptions": [
                 {
                     "title": "Bienvenido al curso de Java",
-                    "back":"Lección anterior",
-                    "next":"Lección siguiente"
+                    "back": "Lección anterior",
+                    "next": "Lección siguiente"
                 },
                 {
                     "video": "film"
@@ -20,36 +20,41 @@
                 }
             ],
             "content": [
-                
                 {
                     "item_id": 1,
                     "contentName": "Objetivo del curso",
                     "parent_id": null
+                   
                 },
                 {
                     "item_id": 2,
                     "contentName": "Acerca de Java",
-                    "parent_id": 1
+                    "parent_id": 1,
+                    "paragraph" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quae culpa harumnostrum ad vitae aspernatur quasi labore, minus perspiciatis eum perferendis corruptiet iure mollitia ipsa voluptates velit commodi?"
                 },
                 {
                     "item_id": 3,
                     "contentName": "Historia",
-                    "parent_id": 1
+                    "parent_id": 1,
+                    "paragraph" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quae culpa harumnostrum ad vitae aspernatur quasi labore, minus perspiciatis eum perferendis corruptiet iure mollitia ipsa voluptates velit commodi?"
                 },
                 {
                     "item_id": 4,
                     "contentName": "Herramientas",
-                    "parent_id": 1
+                    "parent_id": 1,
+                    "paragraph" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quae culpa harum nostrum ad vitae aspernatur quasi labore, minus perspiciatis eum perferendis corruptiet iure mollitia ipsa voluptates velit commodi?"
                 },
                 {
                     "item_id": 5,
                     "contentName": "Libros",
-                    "parent_id": 1
+                    "parent_id": 1,
+                    "paragraph" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quae culpa harumnostrum ad vitae aspernatur quasi labore, minus perspiciatis eum perferendis corruptiet iure mollitia ipsa voluptates velit commodi?"
                 },
                 {
                     "item_id": 6,
                     "contentName": "Eventos",
-                    "parent_id": 1
+                    "parent_id": 1,
+                    "paragraph" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quae culpa harumnostrum ad vitae aspernatur quasi labore, minus perspiciatis eum perferendis corruptiet iure mollitia ipsa voluptates velit commodi?"
                 }
             ]
         },
@@ -59,11 +64,11 @@
             "link": "http://",
             "likes": 68865,
             "comments": 116,
-            "navOptions":[
+            "navOptions": [
                 {
                     "title": "Bienvenido al curso de JavaScript",
-                    "back":"Lección anterior",
-                    "next":"Lección siguiente"
+                    "back": "Lección anterior",
+                    "next": "Lección siguiente"
                 },
                 {
                     "video": "film"
@@ -77,39 +82,50 @@
                     "item_id": 1,
                     "contentName": "Introducción",
                     "parent_id": null
-                },
-                
+                }, 
                 {
                     "item_id": 2,
-                    "contentName": "Acerca de JavaScript",
-                    "parent_id": 1
-                },
+                    "contentName": "Objetivos",
+                    "parent_id": 1,
+                    "paragraph": "JavaScript es un lenguaje de programacion multiparadigma con uso comun para el desarrollo web.Como el lenguaje de programacion mas popular del mundo. Desde principiantes hasta verdaderos expertos cualquiera puede encontrar excelentes tutoriales y otros recursos para aprender y mejorar sus habilidades de programacion de JavaScript Y, siempre puede pedir ayuda a algunos de los ingenieros experimentaciones de JavaScript y a los mienbros de nuestra comunidad."
+                }, 
                 {
                     "item_id": 3,
-                    "contentName": "Historia",
-                    "parent_id": 1
+                    "contentName": "Acerca de JavaScript",
+                    "parent_id": 1,
+                    "paragraph": "Es un lenguaje de programación ligero, interpretado, o compilado justo-a-tiempo (just-in-time) con funciones de primera clase. Si bien es más conocido como un lenguaje de scripting (secuencias de comandos) para páginas web, y es usado en muchos entornos fuera del navegador, tal como Node.js, Apache CouchDB and Adobe Acrobat. JavaScript es un lenguaje de programación basado en prototipos, multi-paradigma, de un solo hilo, dinámico, con soporte para programación orientada a objetos, imperativa y declarativa (por ejemplo programación funcional)"
                 },
                 {
                     "item_id": 4,
-                    "contentName": "Herramientas",
-                    "parent_id": 1
+                    "contentName": "Historia",
+                    "parent_id": 1,
+                    "paragraph" : "A principios de los años 90, la mayoría de usuarios que se conectaban a Internet lo hacían con módems a una velocidad máxima de 28.8 kbps. En esa época, empezaban a desarrollarse las primeras aplicaciones web y por tanto, las páginas web comenzaban a incluir formularios complejos.Con unas aplicaciones web cada vez más complejas y una velocidad de navegación tan lenta, surgió la necesidad de un lenguaje de programación que se ejecutara en el navegador del usuario. De esta forma, si el usuario no rellenaba correctamente un formulario, no se le hacía esperar mucho tiempo hasta que el servidor volviera a mostrar el formulario indicando los errores existentes.Brendan Eich, un programador que trabajaba en Netscape, pensó que podría solucionar este problema adaptando otras tecnologías existentes (como ScriptEase) al navegador Netscape Navigator 2.0, que iba a lanzarse en 1995. Inicialmente, Eich denominó a su lenguaje LiveScript."
                 },
                 {
                     "item_id": 5,
-                    "contentName": "Libros",
-                    "parent_id": 1
+                    "contentName": "Herramientas",
+                    "parent_id": 1,
+                    "paragraph" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quae culpa harumnostrum ad vitae aspernatur quasi labore, minus perspiciatis eum perferendis corruptiet iure mollitia ipsa voluptates velit commodi?"
                 },
                 {
                     "item_id": 6,
+                    "contentName": "Libros",
+                    "parent_id": 1,
+                    "paragraph" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quae culpa harumnostrum ad vitae aspernatur quasi labore, minus perspiciatis eum perferendis corruptiet iure mollitia ipsa voluptates velit commodi?"
+                },
+                {
+                    "item_id": 7,
                     "contentName": "Eventos",
-                    "parent_id": 1
-                },{
-                    "item_id": 1,
+                    "parent_id": 1,
+                    "paragraph" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quae culpa harumnostrum ad vitae aspernatur quasi labore, minus perspiciatis eum perferendis corruptiet iure mollitia ipsa voluptates velit commodi?"
+                },
+                {
+                    "item_id": 8,
                     "contentName": "Semana 1",
                     "parent_id": null
-                }
-                ,{
-                    "item_id": 1,
+                },
+                {
+                    "item_id": 9,
                     "contentName": "Semana 2",
                     "parent_id": null
                 }
@@ -121,12 +137,11 @@
             "link": "http://",
             "likes": 53848,
             "comments": 30,
-            "navOptions":
-            [
+            "navOptions": [
                 {
                     "title": "Bienvenido al curso de React.js",
-                    "back":"Lección anterior",
-                    "next":"Lección siguiente"
+                    "back": "Lección anterior",
+                    "next": "Lección siguiente"
                 },
                 {
                     "video": "film"
@@ -140,6 +155,7 @@
                     "item_id": 1,
                     "contentName": "Introducción",
                     "parent_id": null
+                    
                 },
                 {
                     "item_id": 2,
@@ -174,11 +190,11 @@
             "link": "http://",
             "likes": 66641,
             "comments": 57,
-            "navOptions":[
+            "navOptions": [
                 {
                     "title": "Bienvenido al curso de Python",
-                    "back":"Lección anterior",
-                    "next":"Lección siguiente"
+                    "back": "Lección anterior",
+                    "next": "Lección siguiente"
                 },
                 {
                     "video": "film"
@@ -226,11 +242,11 @@
             "link": "http://",
             "likes": 56456,
             "comments": 60,
-            "navOptions":[
+            "navOptions": [
                 {
                     "title": "Bienvenido al curso de Php",
-                    "back":"Lección anterior",
-                    "next":"Lección siguiente"
+                    "back": "Lección anterior",
+                    "next": "Lección siguiente"
                 },
                 {
                     "video": "film"
@@ -239,8 +255,7 @@
                     "documents": "book"
                 }
             ],
-            "content": 
-            [
+            "content": [
                 {
                     "item_id": 1,
                     "contentName": "Introducción",
