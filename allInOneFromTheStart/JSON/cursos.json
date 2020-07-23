@@ -1,0 +1,277 @@
+{
+    "availableCourses": [
+        {
+            "name": "Java",
+            "image": "java.png",
+            "link": "http://",
+            "likes": 71452,
+            "comments": 57,
+            "navOptions":[
+                {
+                    "title": "Bienvenido al curso de Java",
+                    "back":"Lección anterior",
+                    "next":"Lección siguiente"
+                },
+                {
+                    "video": "film"
+                },
+                {
+                    "documents": "book"
+                }
+            ],
+            "content": [
+                
+                {
+                    "item_id": 1,
+                    "contentName": "Objetivo del curso",
+                    "parent_id": null
+                },
+                {
+                    "item_id": 2,
+                    "contentName": "Acerca de Java",
+                    "parent_id": 1
+                },
+                {
+                    "item_id": 3,
+                    "contentName": "Historia",
+                    "parent_id": 1
+                },
+                {
+                    "item_id": 4,
+                    "contentName": "Herramientas",
+                    "parent_id": 1
+                },
+                {
+                    "item_id": 5,
+                    "contentName": "Libros",
+                    "parent_id": 1
+                },
+                {
+                    "item_id": 6,
+                    "contentName": "Eventos",
+                    "parent_id": 1
+                }
+            ]
+        },
+        {
+            "name": "JavaScript",
+            "image": "javaScript.jpg",
+            "link": "http://",
+            "likes": 68865,
+            "comments": 116,
+            "navOptions":[
+                {
+                    "title": "Bienvenido al curso de Java",
+                    "back":"Lección anterior",
+                    "next":"Lección siguiente"
+                },
+                {
+                    "video": "film"
+                },
+                {
+                    "documents": "book"
+                }
+            ],
+            "content": [
+                {
+                    "item_id": 1,
+                    "contentName": "Introducción",
+                    "parent_id": null
+                },
+                {
+                    "item_id": 2,
+                    "contentName": "Acerca de JavaScript",
+                    "parent_id": 1
+                },
+                {
+                    "item_id": 3,
+                    "contentName": "Historia",
+                    "parent_id": 1
+                },
+                {
+                    "item_id": 4,
+                    "contentName": "Herramientas",
+                    "parent_id": 1
+                },
+                {
+                    "item_id": 5,
+                    "contentName": "Libros",
+                    "parent_id": 1
+                },
+                {
+                    "item_id": 6,
+                    "contentName": "Eventos",
+                    "parent_id": 1
+                },
+                {
+                    "item_id": 7,
+                    "contentName": "Semana1",
+                    "parent_id": null
+                }
+                ,{
+                    "item_id": 8,
+                    "contentName": "Semana2",
+                    "parent_id": null
+                }
+            ]
+        },
+        {
+            "name": "React",
+            "image": "react.jpg",
+            "link": "http://",
+            "likes": 53848,
+            "comments": 30,
+            "navOptions":
+            [
+                {
+                    "title": "Bienvenido al curso de Java",
+                    "back":"Lección anterior",
+                    "next":"Lección siguiente"
+                },
+                {
+                    "video": "film"
+                },
+                {
+                    "documents": "book"
+                }
+            ],
+            "content": [
+                {
+                    "item_id": 1,
+                    "contentName": "Introducción",
+                    "parent_id": null
+                },
+                {
+                    "item_id": 2,
+                    "contentName": "Acerca de React.js",
+                    "parent_id": 1
+                },
+                {
+                    "item_id": 3,
+                    "contentName": "Historia",
+                    "parent_id": 1
+                },
+                {
+                    "item_id": 4,
+                    "contentName": "Herramientas",
+                    "parent_id": 1
+                },
+                {
+                    "item_id": 5,
+                    "contentName": "Libros",
+                    "parent_id": 1
+                },
+                {
+                    "item_id": 6,
+                    "contentName": "Eventos",
+                    "parent_id": 1
+                }
+            ]
+        },
+        {
+            "name": "Python",
+            "image": "python.png",
+            "link": "http://",
+            "likes": 66641,
+            "comments": 57,
+            "navOptions":[
+                {
+                    "title": "Bienvenido al curso de Java",
+                    "back":"Lección anterior",
+                    "next":"Lección siguiente"
+                },
+                {
+                    "video": "film"
+                },
+                {
+                    "documents": "book"
+                }
+            ],
+            "content": [
+                {
+                    "item_id": "1",
+                    "contentName": "Introducción",
+                    "parent_id": null
+                },
+                {
+                    "item_id": "2",
+                    "contentName": "Acerca de Python",
+                    "parent_id": "1"
+                },
+                {
+                    "item_id": "3",
+                    "contentName": "Historia",
+                    "parent_id": "1"
+                },
+                {
+                    "item_id": "4",
+                    "contentName": "Herramientas",
+                    "parent_id": "1"
+                },
+                {
+                    "item_id": "5",
+                    "contentName": "Libros",
+                    "parent_id": "1"
+                },
+                {
+                    "item_id": "6",
+                    "contentName": "Eventos",
+                    "parent_id": "1"
+                }
+            ]
+        },
+        {
+            "name": "PHP",
+            "image": "php.jpg",
+            "link": "http://",
+            "likes": 56456,
+            "comments": 60,
+            "navOptions":[
+                {
+                    "title": "Bienvenido al curso de Java",
+                    "back":"Lección anterior",
+                    "next":"Lección siguiente"
+                },
+                {
+                    "video": "film"
+                },
+                {
+                    "documents": "book"
+                }
+            ],
+            "content": 
+            [
+                {
+                    "item_id": "1",
+                    "contentName": "Introducción",
+                    "parent_id": null
+                },
+                {
+                    "item_id": "2",
+                    "contentName": "Acerca de Php",
+                    "parent_id": "1"
+                },
+                {
+                    "item_id": "3",
+                    "contentName": "Historia",
+                    "parent_id": "1"
+                },
+                {
+                    "item_id": "4",
+                    "contentName": "Herramientas",
+                    "parent_id": "1"
+                },
+                {
+                    "item_id": "5",
+                    "contentName": "Libros",
+                    "parent_id": "1"
+                },
+                {
+                    "item_id": "6",
+                    "contentName": "Eventos",
+                    "parent_id": "1"
+                }
+            ]
+        }
+    ]
+}

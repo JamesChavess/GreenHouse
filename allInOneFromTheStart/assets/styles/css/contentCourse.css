@@ -1,0 +1,79 @@
+
+#lessonNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid var(--colorBordeOpcion);
+}
+
+#lessonNav a{
+    flex: 1 1 auto;
+    padding: 5px;
+    border-right: 1px solid var(--colorBordeOpcion);
+    text-decoration: none;
+    text-align: center;
+    color: var(--colorBordeOpcion);
+    border-color: 1px solid var(--colorBordeOpcion);
+}
+
+#lessonNav a:first-child{
+    border-right: none;
+}
+
+#lessonNav a:last-child{
+    border-right: none;
+}
+
+#lessonNav a:nth-child(7){
+    border-right: none;
+}
+
+#goalsCourse {
+    background-color: rgba(0 ,0 ,0, 0.05);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+}
+
+#goalsCourse p{
+    padding: 10px 25px;
+    text-align: left;
+    font-family: sans-serif;
+}
+.contentCourseArticle {
+    margin: 20px 60px;
+}
+
+.contentCourseArticle h2 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.contentCourseArticle p{
+    font-family: sans-serif;
+    border-left: 5px solid var(--colorBordeOpcion);
+    padding: 0 20px;
+}
+
+.contentCourse{
+    margin-left: 130px;
+    position:relative;
+} 
+
+
+aside{
+    top: 0px;
+    position: sticky;
+    width: auto;
+    padding: 10px;
+    min-height: calc(100vh - 45px); 
+    display: flex;
+    flex-flow: column wrap;
+    align-self: flex-start;
+    border-right: 1px solid silver;
+}
+h5{
+    margin-bottom: 20px;
+}

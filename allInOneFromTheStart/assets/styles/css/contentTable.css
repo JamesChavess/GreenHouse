@@ -1,0 +1,88 @@
+#accordion {
+  width: auto;
+}
+
+#accordion .tableBody {
+  color: gray;
+  margin-left: 10%;
+  padding: 10px;
+  display: none !important;
+  background-color: white;
+  overflow: hidden;
+}
+#accordion .open .tableBody {
+  display: block !important;
+}
+
+#accordion .panel {
+  border-bottom: 1px solid silver;
+  width: 250px;
+}
+
+.tableHeader {
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.arrow {
+  max-width: 18px;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.arrow.down {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.searchContent{
+  position: relative;
+  width: 235px;
+}
+
+.searchContent input{
+  width: 100%;
+  padding: 6px 25px;
+  border: 1px solid #A9A9A9;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.searchContent input:focus{
+  box-shadow: 0 0 2px 4px rgba(52, 152, 219, 0.5);
+}
+
+.fa-search {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  color: #A9A9A9;
+}
+
+.accordionIndex{
+  color: gray;
+  text-decoration: none;
+}
+ 
+.accordionIndex:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.accordionContainer{
+  position: fixed;
+}
+
+  
+
+
+
+
+
+
+
+
+

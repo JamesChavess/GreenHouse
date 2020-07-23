@@ -1,0 +1,47 @@
+.navMenu {
+    background-color: var(--colorBarraMenu);
+    width: 70px;
+    height: calc(100vh - 45px);
+    grid-row-start: 2;
+    grid-row-end: 4;
+    overflow: hidden auto;
+}
+
+.navMenu::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-link {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 10px;
+    transition: all 0.2s;
+    border-bottom: 1px solid var(--colorBordeOpcion);
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.menu-link img {
+    width: 40px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.menu-link span {
+    color: var(--colorTextoOpcion);
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.menu-link.active {
+    background: rgba(0, 0, 0, 0.4);
+}

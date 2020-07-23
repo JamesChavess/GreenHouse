@@ -1,0 +1,109 @@
+@import url("all.min.css");
+@import url("navMenu.css");
+@import url("topMenu.css");
+@import url("courses.css");
+@import url("contentTable.css");
+
+@font-face {
+  font-family: "Copperplate Gothic Bold";
+  src: url("../fonts/Copperplate.ttf") format("truetype");
+}
+
+:root {
+  --colorPrimario: #272727;
+  --colorBarraMenu: #323232;
+  --colorBordeOpcion: #474747;
+  --colorTextoOpcion: #9d9d9d;
+}
+
+html{
+  scroll-behavior:smooth
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Copperplate Gothic Bold", "Helvetica", sans-serif;
+}
+
+.header {
+  border-bottom: 1px solid var(--colorTextoOpcion);
+  min-height: 0;
+  min-width: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.title img {
+  height: 35px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.options {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row;
+  justify-content: left;
+  align-items: center;
+  white-space: nowrap;
+  overflow: auto hidden;
+}
+
+.options::-webkit-scrollbar {
+  height: 5px;
+  background: var(--colorTextoOpcion);
+}
+
+.options::-webkit-scrollbar-thumb {
+  height: 5px;
+  background: var(--colorBordeOpcion);
+}
+
+.options:hover::-webkit-scrollbar-thumb {
+  background: var(--colorBarraMenu);
+}
+
+.option-name {
+  text-decoration: none;
+  color: var(--colorBordeOpcion);
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.option-name.selected {
+  color: var(--colorPrimario);
+  border-bottom: 2px solid #01aef2;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: 70px auto;
+  grid-template-rows: 45px auto auto;
+  overflow: hidden;
+}
+
+main {
+  overflow-y: scroll;
+  max-height: 100%;
+  top: 0px;
+  width: auto;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex;
+  color: #383838;
+  position: relative;
+}
+
+section {
+  padding: 10px;
+}
