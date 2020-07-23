@@ -75,12 +75,13 @@
             "content": [
                 {
                     "item_id": 1,
-                    "contentName": "Objetivo del curso",
+                    "contentName": "Introducción",
                     "parent_id": null
                 },
+                
                 {
                     "item_id": 2,
-                    "contentName": "Acerca de Java",
+                    "contentName": "Acerca de JavaScript",
                     "parent_id": 1
                 },
                 {
@@ -102,6 +103,15 @@
                     "item_id": 6,
                     "contentName": "Eventos",
                     "parent_id": 1
+                },{
+                    "item_id": 1,
+                    "contentName": "Semana 1",
+                    "parent_id": null
+                }
+                ,{
+                    "item_id": 1,
+                    "contentName": "Semana 2",
+                    "parent_id": null
                 }
             ]
         },

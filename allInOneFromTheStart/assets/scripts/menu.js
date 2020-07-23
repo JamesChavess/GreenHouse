@@ -66,6 +66,7 @@ export class NavMenu {
                 arr.src = 'img/next.png';
                 arr.setAttribute('class','arrow');
                 div.addEventListener("click", function() {
+                  arr.classList.toggle('down');
                   panel.classList.toggle('open');
                 });
                 div.setAttribute('class','tableHeader');
