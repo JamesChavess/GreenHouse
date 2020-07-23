@@ -58,14 +58,13 @@
 }
 
 .contentCourse{
-    margin-left: 130px;
+    margin-left: 270px;
     position:relative;
 } 
 
 
 aside{
-    top: 0px;
-    position: sticky;
+    position: fixed;
     width: auto;
     padding: 10px;
     min-height: calc(100vh - 45px); 
