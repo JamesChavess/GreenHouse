@@ -61,7 +61,7 @@
             "comments": 116,
             "navOptions":[
                 {
-                    "title": "Bienvenido al curso de Java",
+                    "title": "Bienvenido al curso de JavaScript",
                     "back":"Lección anterior",
                     "next":"Lección siguiente"
                 },
@@ -75,12 +75,12 @@
             "content": [
                 {
                     "item_id": 1,
-                    "contentName": "Introducción",
+                    "contentName": "Objetivo del curso",
                     "parent_id": null
                 },
                 {
                     "item_id": 2,
-                    "contentName": "Acerca de JavaScript",
+                    "contentName": "Acerca de Java",
                     "parent_id": 1
                 },
                 {
@@ -102,16 +102,6 @@
                     "item_id": 6,
                     "contentName": "Eventos",
                     "parent_id": 1
-                },
-                {
-                    "item_id": 7,
-                    "contentName": "Semana1",
-                    "parent_id": null
-                }
-                ,{
-                    "item_id": 8,
-                    "contentName": "Semana2",
-                    "parent_id": null
                 }
             ]
         },
@@ -124,7 +114,7 @@
             "navOptions":
             [
                 {
-                    "title": "Bienvenido al curso de Java",
+                    "title": "Bienvenido al curso de React.js",
                     "back":"Lección anterior",
                     "next":"Lección siguiente"
                 },
@@ -176,7 +166,7 @@
             "comments": 57,
             "navOptions":[
                 {
-                    "title": "Bienvenido al curso de Java",
+                    "title": "Bienvenido al curso de Python",
                     "back":"Lección anterior",
                     "next":"Lección siguiente"
                 },
@@ -189,34 +179,34 @@
             ],
             "content": [
                 {
-                    "item_id": "1",
+                    "item_id": 1,
                     "contentName": "Introducción",
                     "parent_id": null
                 },
                 {
-                    "item_id": "2",
+                    "item_id": 2,
                     "contentName": "Acerca de Python",
-                    "parent_id": "1"
+                    "parent_id": 1
                 },
                 {
-                    "item_id": "3",
+                    "item_id": 3,
                     "contentName": "Historia",
-                    "parent_id": "1"
+                    "parent_id": 1
                 },
                 {
-                    "item_id": "4",
+                    "item_id": 4,
                     "contentName": "Herramientas",
-                    "parent_id": "1"
+                    "parent_id": 1
                 },
                 {
-                    "item_id": "5",
+                    "item_id": 5,
                     "contentName": "Libros",
-                    "parent_id": "1"
+                    "parent_id": 1
                 },
                 {
-                    "item_id": "6",
+                    "item_id": 6,
                     "contentName": "Eventos",
-                    "parent_id": "1"
+                    "parent_id": 1
                 }
             ]
         },
@@ -228,7 +218,7 @@
             "comments": 60,
             "navOptions":[
                 {
-                    "title": "Bienvenido al curso de Java",
+                    "title": "Bienvenido al curso de Php",
                     "back":"Lección anterior",
                     "next":"Lección siguiente"
                 },
@@ -242,34 +232,34 @@
             "content": 
             [
                 {
-                    "item_id": "1",
+                    "item_id": 1,
                     "contentName": "Introducción",
                     "parent_id": null
                 },
                 {
-                    "item_id": "2",
+                    "item_id": 2,
                     "contentName": "Acerca de Php",
-                    "parent_id": "1"
+                    "parent_id": 1
                 },
                 {
-                    "item_id": "3",
+                    "item_id": 3,
                     "contentName": "Historia",
-                    "parent_id": "1"
+                    "parent_id": 1
                 },
                 {
-                    "item_id": "4",
+                    "item_id": 4,
                     "contentName": "Herramientas",
-                    "parent_id": "1"
+                    "parent_id": 1
                 },
                 {
-                    "item_id": "5",
+                    "item_id": 5,
                     "contentName": "Libros",
-                    "parent_id": "1"
+                    "parent_id": 1
                 },
                 {
-                    "item_id": "6",
+                    "item_id": 6,
                     "contentName": "Eventos",
-                    "parent_id": "1"
+                    "parent_id": 1
                 }
             ]
         }
