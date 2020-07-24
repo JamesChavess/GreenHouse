@@ -50,6 +50,11 @@ export class NavMenu {
         const contentCourse = document.getElementById("contentCourses");
         container.innerHTML = "";
         contentCourse.innerHTML = "";
+        let formSearch = document.createElement('form');
+        formSearch.classList.add('searchContent');
+        formSearch.innerHTML = `<span class="fas fa-search"></span>
+        <input type="text" name="keyword">`;
+        container.appendChild(formSearch);
         
         getData("./JSON/cursos.json").then((response) => {
           const javaScript = response.availableCourses[1].content;
@@ -58,20 +63,19 @@ export class NavMenu {
             item.HTMLelement = div;
             
             if (item.parent_id == null) {
-                console.log(item);
                 let panelBody = document.createElement('div');
                 let panel = document.createElement('div');
                 let arr = document.createElement('img');
-                panel.setAttribute('class','panel');
+                panel.classList.add('panel');
                 
-                panelBody.setAttribute('class','tableBody');
+                panelBody.classList.add('tableBody');
                 arr.src = 'img/next.png';
-                arr.setAttribute('class','arrow');
+                arr.classList.add('arrow');
                 div.addEventListener("click", function() {
                   arr.classList.toggle('down');
                   panel.classList.toggle('open');
                 });
-                div.setAttribute('class','tableHeader');
+                div.classList.add('tableHeader');
                 div.innerHTML = `<span> ${item.contentName}</span>`;
                 div.prepend(arr);
                 panel.appendChild(div);
@@ -97,7 +101,13 @@ export class NavMenu {
               let pIndex = array.findIndex(obj => obj.item_id === item.parent_id);
               let parent = array[pIndex];
               let subDiv = document.createElement('div');
-              subDiv.innerHTML = `<a href="#${item.contentName}" class="accordionIndex" >${item.contentName}</a>`;
+              let subDivChild = document.createElement('span');
+              subDivChild.setAttribute('class', 'accordionIndex');
+              subDivChild.textContent = item.contentName;
+              subDivChild.addEventListener('click', function() {
+                document.getElementById(item.contentName).scrollIntoView({behavior: 'smooth' });
+              });
+              subDiv.appendChild(subDivChild);
               parent.HTMLelement.nextElementSibling.appendChild(subDiv);
             }
           });
