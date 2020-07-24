@@ -101,7 +101,7 @@ export class NavMenu {
               let pIndex = array.findIndex(obj => obj.item_id === item.parent_id);
               let parent = array[pIndex];
               let subDiv = document.createElement('div');
-              let subDivChild = document.createElement('span');
+              let subDivChild = document.createElement('p');
               subDivChild.setAttribute('class', 'accordionIndex');
               subDivChild.textContent = item.contentName;
               subDivChild.addEventListener('click', function() {
@@ -112,7 +112,7 @@ export class NavMenu {
             }
           });
         });
-      });
+    });
   }
 }
 
