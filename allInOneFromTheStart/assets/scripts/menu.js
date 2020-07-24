@@ -44,12 +44,23 @@ export class NavMenu {
         });
 
         e.currentTarget.classList.add("active");
+        document.getElementById('welcome').style.display = 'none';
 
-      
+        const main = document.getElementById('contentContainer');
+        main.innerHTML = "";
+
+        const accordion = document.createElement('aside');
+        const contentContainer = document.createElement('section');
+        contentContainer.classList.add('contentCourse');
+        contentContainer.id = "contentCourses";
+        accordion.classList.add('accordion');
+        accordion.innerHTML = `<div class="accordionContainer">
+        <div id="accordion"></div></div>`;
+        main.appendChild(accordion);
+        main.appendChild(contentContainer);
+
         const container = document.getElementById("accordion");
         const contentCourse = document.getElementById("contentCourses");
-        container.innerHTML = "";
-        contentCourse.innerHTML = "";
         let formSearch = document.createElement('form');
         formSearch.classList.add('searchContent');
         formSearch.innerHTML = `<span class="fas fa-search"></span>
@@ -57,17 +68,22 @@ export class NavMenu {
         container.appendChild(formSearch);
         
         getData("./JSON/cursos.json").then((response) => {
-          const javaScript = response.availableCourses[1].content;
-          javaScript.forEach(function (item, index, array) {
+          const course = response.availableCourses[1];
+          contentContainer.innerHTML = ` <h2>curso de ${course.name}</h2><nav id="lessonNav">
+          <a href="#"><i class="fas fa-chevron-left"></i> Leccion anterior</a>
+          <a href="#">Leccion siguiente <i class="fas fa-chevron-right"></i></nav>`;
+          const lessonNav = document.getElementById('lessonNav');
+          course.content.forEach(function (item, index, array) {
             let div = document.createElement('div');
             item.HTMLelement = div;
+
             
             if (item.parent_id == null) {
                 let panelBody = document.createElement('div');
                 let panel = document.createElement('div');
                 let arr = document.createElement('img');
+
                 panel.classList.add('panel');
-                
                 panelBody.classList.add('tableBody');
                 arr.src = 'img/next.png';
                 arr.classList.add('arrow');
@@ -85,6 +101,8 @@ export class NavMenu {
               let article = document.createElement('article');
               let title = document.createElement('h2');
               let paragraph = document.createElement('p');
+
+
               paragraph.innerHTML = `${item.paragraph}`;
               title.innerHTML = `${item.contentName}`;
               article.appendChild(title);
@@ -98,10 +116,12 @@ export class NavMenu {
 
               }
               contentCourse.appendChild(article);
+
               let pIndex = array.findIndex(obj => obj.item_id === item.parent_id);
               let parent = array[pIndex];
               let subDiv = document.createElement('div');
               let subDivChild = document.createElement('p');
+
               subDivChild.setAttribute('class', 'accordionIndex');
               subDivChild.textContent = item.contentName;
               subDivChild.addEventListener('click', function() {

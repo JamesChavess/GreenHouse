@@ -22,39 +22,54 @@
             "content": [
                 {
                     "item_id": 1,
+                    "contentName": "Introducción",
+                    "parent_id": null
+                }, 
+                {
+                    "item_id": 2,
                     "contentName": "Objetivo del curso",
                     "parent_id": null
                    
                 },
                 {
-                    "item_id": 2,
+                    "item_id": 3,
                     "contentName": "Acerca de Java",
                     "parent_id": 1,
-                    "paragraph" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quae culpa harumnostrum ad vitae aspernatur quasi labore, minus perspiciatis eum perferendis corruptiet iure mollitia ipsa voluptates velit commodi?"
-                },
-                {
-                    "item_id": 3,
-                    "contentName": "Historia",
-                    "parent_id": 1,
-                    "paragraph" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quae culpa harumnostrum ad vitae aspernatur quasi labore, minus perspiciatis eum perferendis corruptiet iure mollitia ipsa voluptates velit commodi?"
+                    "paragraph" : "Java es un lenguaje de programación de propósito general que está basado en clases , orientado a objetos y diseñado para tener la menor cantidad posible de dependencias de implementación ."
                 },
                 {
                     "item_id": 4,
-                    "contentName": "Herramientas",
+                    "contentName": "Historia",
                     "parent_id": 1,
-                    "paragraph" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quae culpa harum nostrum ad vitae aspernatur quasi labore, minus perspiciatis eum perferendis corruptiet iure mollitia ipsa voluptates velit commodi?"
+                    "paragraph" : "El lenguaje Java fue desarrollado en sus inicios por James Gosling, en el año 1991. Inicialmente Java era conocido como Oak o Green.La primera versión del lenguaje Java es publicada por Sun Microsystems en 1995. Y es en la versión del lenguaje JDK 1.0.2, cuando pasa a llamarse Java, corría el año 1996. En las primeras versiones de Java 1.1, 1.2 y 1.3 es en la que el lenguaje va tomando forma, con la inclusión de tecnologías como JavaBeans, JDBC para el acceso a base de datos, RMI para las invocaciones en remoto, Collections para la gestión de múltiples estructuras de datos o AWT para el desarrollo gráfico, entre otros."
                 },
                 {
                     "item_id": 5,
+                    "contentName": "Herramientas",
+                    "parent_id": 1,
+                    "paragraph" : " LOGSTASH <br/> GRAYLOG2 <br/> NETBEANS <br/> ECLIPSE <br/> INTELLIJ IDEA <br/> GVNIX <br/> CYGWIN <br/> PUTTY \n GITHUB"
+                },
+                {
+                    "item_id": 6,
                     "contentName": "Libros",
+                    "parent_id": 1,
+                    "paragraph" : " El gran libro de Java a Fondo 4ª Ed. - Pablo Augusto Sznajdleder \n Java para novatos: Cómo aprender programación orientada a objetos con Java sin desesperarse en el intento: Volume 3 - A. M. Vozmediano \n Aprende a Programar con Java (Informática) - Alfonso Jiménez Marín y Franciso Manuel Pérez Montes\n Java 9 (Títulos Especiales) - Herbert Schildt \n El Libro Negro del Programador: Cómo conseguir una carrera de éxito desarrollando software y cómo evitar los errores habituales - Rafael Gómez Blanes \n Java 9 (MANUALES IMPRESCINDIBLES) - F. Javier Moldes"
+                },
+                {
+                    "item_id": 7,
+                    "contentName": "Eventos",
                     "parent_id": 1,
                     "paragraph" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quae culpa harumnostrum ad vitae aspernatur quasi labore, minus perspiciatis eum perferendis corruptiet iure mollitia ipsa voluptates velit commodi?"
                 },
                 {
-                    "item_id": 6,
-                    "contentName": "Eventos",
-                    "parent_id": 1,
-                    "paragraph" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quae culpa harumnostrum ad vitae aspernatur quasi labore, minus perspiciatis eum perferendis corruptiet iure mollitia ipsa voluptates velit commodi?"
+                    "item_id": 8,
+                    "contentName": "Semana 1",
+                    "parent_id": null
+                },
+                {
+                    "item_id": 9,
+                    "contentName": "Semana 2",
+                    "parent_id": null
                 }
             ]
         },
@@ -105,13 +120,13 @@
                     "item_id": 5,
                     "contentName": "Herramientas",
                     "parent_id": 1,
-                    "paragraph" : "FrameWorks : Express.js, Angular.js, Ember.js, Knockout.js \n Libraries : JQuery, Backbone.js, Kendo UI, Modernizr, "
+                    "paragraph" : "Aqui hay una pequena lista de frameworks in librerias de Javascript <br/> FrameWorks : React.js, Vue.js, BExpress.js, Angular.js, Ember.js, Knockout.js <br/> Libraries : S5, JQuery, Dojo Toolkit, Google polymer, Moo tools, Kendo UI, Modernizr, "
                 },
                 {
                     "item_id": 6,
                     "contentName": "Libros",
                     "parent_id": 1,
-                    "paragraph" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quae culpa harumnostrum ad vitae aspernatur quasi labore, minus perspiciatis eum perferendis corruptiet iure mollitia ipsa voluptates velit commodi?"
+                    "paragraph" : "JavaScript for Kids: A Playful Introduction to Programming by Nick Morgan <br/> You Don’t Know JS by Kyle Simpson<br/> JavaScript Allongé: The Six Edition by Reginald Braithwaite <br/>Composing Software by Eric Elliott<br/> High Performance Browser Networking by Ilya Grigorik <br/> Web Audio API by Boris Smus <br/>Eloquent JavaScript: A Modern Introduction to Programming by Marijn Haverbeke <br/> JavaScript: The Good Parts by Douglas Crockford <br/> Programming JavaScript Applications: Robust Web Architecture with Node, HTML5, and Moderns JS Libraries by Eric Elliott <br/>  Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript by David Herman<br/> JavaScript: The Definitive Guide by David Flanagan"
                 },
                 {
                     "item_id": 7,
@@ -159,28 +174,49 @@
                 },
                 {
                     "item_id": 2,
-                    "contentName": "Acerca de React.js",
-                    "parent_id": 1
-                },
+                    "contentName": "Objetivos",
+                    "parent_id": 1,
+                    "paragraph": " "
+                }, 
                 {
                     "item_id": 3,
-                    "contentName": "Historia",
-                    "parent_id": 1
+                    "contentName": "Acerca de React.js",
+                    "parent_id": 1,
+                    "paragraph": "React . js es una biblioteca de JavaScript de código abierto que se utiliza para crear interfaces de usuario específicamente para aplicaciones de una sola página. Se utiliza para manejar la capa de vista para aplicaciones web y móviles. React también nos permite crear componentes de IU reutilizables. "
                 },
                 {
                     "item_id": 4,
-                    "contentName": "Herramientas",
-                    "parent_id": 1
+                    "contentName": "Historia",
+                    "parent_id": 1,
+                    "paragraph": "React fue creado por Jordan Walke, un ingeniero de software en Facebook, que lanzó un primer prototipo de React llamado 'FaxJS'. Fue influenciado por XHP, una biblioteca de componentes HTML para PHP. Se implementó por primera vez en las noticias de Facebook en 2011 y luego en Instagram en 2012. Fue de código abierto en JSConf US en mayo de 2013."
                 },
                 {
                     "item_id": 5,
-                    "contentName": "Libros",
-                    "parent_id": 1
+                    "contentName": "Herramientas",
+                    "parent_id": 1,
+                    "paragraph": "React Developer Tools es una extensión de Chrome DevTools para la biblioteca React JavaScript de código abierto. Le permite inspeccionar las jerarquías de componentes React en las Herramientas para desarrolladores de Chrome . Obtendrá dos pestañas nuevas en sus Chrome DevTools: '⚛️ Componentes' y '⚛️ Profiler'."
                 },
                 {
                     "item_id": 6,
+                    "contentName": "Libros",
+                    "parent_id": 1,
+                    "paragraph": ""
+                },
+                {
+                    "item_id": 7,
                     "contentName": "Eventos",
-                    "parent_id": 1
+                    "parent_id": 1,
+                    "paragraph": ""
+                },
+                {
+                    "item_id": 8,
+                    "contentName": "Semana 1",
+                    "parent_id": null
+                },
+                {
+                    "item_id": 9,
+                    "contentName": "Semana 2",
+                    "parent_id": null
                 }
             ]
         },
@@ -211,28 +247,49 @@
                 },
                 {
                     "item_id": 2,
-                    "contentName": "Acerca de Python",
-                    "parent_id": 1
-                },
+                    "contentName": "Objetivos",
+                    "parent_id": 1,
+                    "paragraph": "JavaScript es un lenguaje de programacion multiparadigma con uso comun para el desarrollo web.Como el lenguaje de programacion mas popular del mundo. Desde principiantes hasta verdaderos expertos cualquiera puede encontrar excelentes tutoriales y otros recursos para aprender y mejorar sus habilidades de programacion de JavaScript Y, siempre puede pedir ayuda a algunos de los ingenieros experimentaciones de JavaScript y a los mienbros de nuestra comunidad."
+                }, 
                 {
                     "item_id": 3,
-                    "contentName": "Historia",
-                    "parent_id": 1
+                    "contentName": "Acerca de Python",
+                    "parent_id": 1,
+                    "paragraph": ""
                 },
                 {
                     "item_id": 4,
-                    "contentName": "Herramientas",
-                    "parent_id": 1
+                    "contentName": "Historia",
+                    "parent_id": 1,
+                    "paragraph": ""
                 },
                 {
                     "item_id": 5,
-                    "contentName": "Libros",
-                    "parent_id": 1
+                    "contentName": "Herramientas",
+                    "parent_id": 1,
+                    "paragraph": ""
                 },
                 {
                     "item_id": 6,
+                    "contentName": "Libros",
+                    "parent_id": 1,
+                    "paragraph": ""
+                },
+                {
+                    "item_id": 7,
                     "contentName": "Eventos",
-                    "parent_id": 1
+                    "parent_id": 1,
+                    "paragraph": ""
+                },
+                {
+                    "item_id": 8,
+                    "contentName": "Semana 1",
+                    "parent_id": null
+                },
+                {
+                    "item_id": 9,
+                    "contentName": "Semana 2",
+                    "parent_id": null
                 }
             ]
         },
@@ -260,31 +317,52 @@
                     "item_id": 1,
                     "contentName": "Introducción",
                     "parent_id": null
-                },
+                }, 
                 {
                     "item_id": 2,
-                    "contentName": "Acerca de Php",
-                    "parent_id": 1
-                },
+                    "contentName": "Objetivos",
+                    "parent_id": 1,
+                    "paragraph": "JavaScript es un lenguaje de programacion multiparadigma con uso comun para el desarrollo web.Como el lenguaje de programacion mas popular del mundo. Desde principiantes hasta verdaderos expertos cualquiera puede encontrar excelentes tutoriales y otros recursos para aprender y mejorar sus habilidades de programacion de JavaScript Y, siempre puede pedir ayuda a algunos de los ingenieros experimentaciones de JavaScript y a los mienbros de nuestra comunidad."
+                }, 
                 {
                     "item_id": 3,
-                    "contentName": "Historia",
-                    "parent_id": 1
+                    "contentName": "Acerca de Php",
+                    "parent_id": 1,
+                    "paragraph": ""
                 },
                 {
                     "item_id": 4,
-                    "contentName": "Herramientas",
-                    "parent_id": 1
+                    "contentName": "Historia",
+                    "parent_id": 1,
+                    "paragraph": ""
                 },
                 {
                     "item_id": 5,
-                    "contentName": "Libros",
-                    "parent_id": 1
+                    "contentName": "Herramientas",
+                    "parent_id": 1,
+                    "paragraph": ""
                 },
                 {
                     "item_id": 6,
+                    "contentName": "Libros",
+                    "parent_id": 1,
+                    "paragraph": ""
+                },
+                {
+                    "item_id": 7,
                     "contentName": "Eventos",
-                    "parent_id": 1
+                    "parent_id": 1,
+                    "paragraph": ""
+                },
+                {
+                    "item_id": 8,
+                    "contentName": "Semana 1",
+                    "parent_id": null
+                },
+                {
+                    "item_id": 9,
+                    "contentName": "Semana 2",
+                    "parent_id": null
                 }
             ]
         }
