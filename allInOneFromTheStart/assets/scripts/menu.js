@@ -97,12 +97,18 @@ export class NavMenu {
               let pIndex = array.findIndex(obj => obj.item_id === item.parent_id);
               let parent = array[pIndex];
               let subDiv = document.createElement('div');
-              subDiv.innerHTML = `<a href="#${item.contentName}" class="accordionIndex" >${item.contentName}</a>`;
+              let subDivChild = document.createElement('p');
+              subDivChild.setAttribute('class', 'accordionIndex');
+              subDivChild.textContent = item.contentName;
+              subDivChild.addEventListener('click', function() {
+                document.getElementById(item.contentName).scrollIntoView({behavior: 'smooth' });
+              });
+              subDiv.appendChild(subDivChild);
               parent.HTMLelement.nextElementSibling.appendChild(subDiv);
             }
           });
         });
-      });
+    });
   }
 }
 
