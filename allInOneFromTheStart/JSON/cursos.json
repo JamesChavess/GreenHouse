@@ -6,19 +6,6 @@
             "link": "http://",
             "likes": 71452,
             "comments": 57,
-            "navOptions": [
-                {
-                    "title": "Bienvenido al curso de Java",
-                    "back": "Lección anterior",
-                    "next": "Lección siguiente"
-                },
-                {
-                    "video": "film"
-                },
-                {
-                    "documents": "book"
-                }
-            ],
             "content": [
                 {
                     "item_id": 1,
@@ -57,7 +44,7 @@
                 },
                 {
                     "item_id": 7,
-                    "contentName": "Eventos",
+                    "contentName": "",
                     "parent_id": 1,
                     "paragraph" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quae culpa harumnostrum ad vitae aspernatur quasi labore, minus perspiciatis eum perferendis corruptiet iure mollitia ipsa voluptates velit commodi?"
                 },
@@ -79,17 +66,22 @@
             "link": "http://",
             "likes": 68865,
             "comments": 116,
-            "navOptions": [
+            "resources":[
                 {
-                    "title": "Bienvenido al curso de JavaScript",
-                    "back": "Lección anterior",
-                    "next": "Lección siguiente"
+                    "type":"book",
+                    "link":"#"
                 },
                 {
-                    "video": "film"
+                    "type":"video",
+                    "link":"#"
                 },
                 {
-                    "documents": "book"
+                    "type":"book",
+                    "link":"#"
+                },
+                {
+                    "type":"video",
+                    "link":"#"
                 }
             ],
             "content": [
@@ -130,9 +122,9 @@
                 },
                 {
                     "item_id": 7,
-                    "contentName": "Eventos",
+                    "contentName": "Array Methods",
                     "parent_id": 1,
-                    "paragraph" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quae culpa harumnostrum ad vitae aspernatur quasi labore, minus perspiciatis eum perferendis corruptiet iure mollitia ipsa voluptates velit commodi?"
+                    "paragraph": ""
                 },
                 {
                     "item_id": 8,
@@ -141,6 +133,18 @@
                 },
                 {
                     "item_id": 9,
+                    "contentName": "Variables",
+                    "parent_id": 8,
+                    "paragraph" : "una variable es un recurso de memoria del ordenador reservado para alojar una información. Las variables tienen un continente que puede o no almacenar un contenido. En caso de no tenerlo javascript guarda un espacio de memoria con el valor undefined. Se definen varios tipos de variable según si contienen números, textos, listas"
+                },
+                {
+                    "item_id": 10,
+                    "contentName": "Tipos de Variables",
+                    "parent_id": 8,
+                    "paragraph": "LET La instrucción let declara una variable de alcance local con ámbito de bloque(block scope), la cual, opcionalmente, puede ser inicializada con algún valor.  VAR La sentencia var declara una variable, opcionalmente inicializándola con un valor"
+                },
+                {
+                    "item_id": 11,
                     "contentName": "Semana 2",
                     "parent_id": null
                 }
@@ -152,19 +156,6 @@
             "link": "http://",
             "likes": 53848,
             "comments": 30,
-            "navOptions": [
-                {
-                    "title": "Bienvenido al curso de React.js",
-                    "back": "Lección anterior",
-                    "next": "Lección siguiente"
-                },
-                {
-                    "video": "film"
-                },
-                {
-                    "documents": "book"
-                }
-            ],
             "content": [
                 {
                     "item_id": 1,
@@ -200,7 +191,7 @@
                     "item_id": 6,
                     "contentName": "Libros",
                     "parent_id": 1,
-                    "paragraph": ""
+                    "paragraph": "Pro React 16 - Adam Freeman  <br/> Learning React - "
                 },
                 {
                     "item_id": 7,
@@ -226,19 +217,6 @@
             "link": "http://",
             "likes": 66641,
             "comments": 57,
-            "navOptions": [
-                {
-                    "title": "Bienvenido al curso de Python",
-                    "back": "Lección anterior",
-                    "next": "Lección siguiente"
-                },
-                {
-                    "video": "film"
-                },
-                {
-                    "documents": "book"
-                }
-            ],
             "content": [
                 {
                     "item_id": 1,
@@ -249,7 +227,7 @@
                     "item_id": 2,
                     "contentName": "Objetivos",
                     "parent_id": 1,
-                    "paragraph": "JavaScript es un lenguaje de programacion multiparadigma con uso comun para el desarrollo web.Como el lenguaje de programacion mas popular del mundo. Desde principiantes hasta verdaderos expertos cualquiera puede encontrar excelentes tutoriales y otros recursos para aprender y mejorar sus habilidades de programacion de JavaScript Y, siempre puede pedir ayuda a algunos de los ingenieros experimentaciones de JavaScript y a los mienbros de nuestra comunidad."
+                    "paragraph": "Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código. ​ Se trata de un lenguaje de programación multiparadigma, ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional."
                 }, 
                 {
                     "item_id": 3,
@@ -261,7 +239,7 @@
                     "item_id": 4,
                     "contentName": "Historia",
                     "parent_id": 1,
-                    "paragraph": ""
+                    "paragraph": "La historia del lenguaje programación Python se remonta hacia finales de los 80s y principio de los 90s1​, su implementación comenzó en diciembre de 19892​ cuando en Navidad Guido Van Rossum que trabajaba en el (CWI) (un centro de investigación holandés de carácter oficial que, entre otras cosas, actualmente alberga la oficina central del W3C) decidió empezar el proyecto como un pasatiempo dándole continuidad al lenguaje de programación ABC del que había formado parte del equipo de desarrollo en el CWI,3​ dicho lenguaje se enfocaba en ser fácil de usar y aprender manteniendo potencia en su desempeño pero el hardware disponible en la época de su creación hacía difícil su uso y el proyecto no trascendió como se esperaba. Van Rossum es por tanto el autor principal de Python y continúa ejerciendo un rol central decidiendo la dirección del lenguaje, en la comunidad de Python se le conoce como Benevolente Dictador Vitalicio (en inglés: Benevolent Dictator for Life, BDFL). El nombre Python viene dado por la afición de Van Rossum al grupo Monty Python."
                 },
                 {
                     "item_id": 5,
@@ -285,6 +263,7 @@
                     "item_id": 8,
                     "contentName": "Semana 1",
                     "parent_id": null
+                    
                 },
                 {
                     "item_id": 9,
@@ -299,19 +278,6 @@
             "link": "http://",
             "likes": 56456,
             "comments": 60,
-            "navOptions": [
-                {
-                    "title": "Bienvenido al curso de Php",
-                    "back": "Lección anterior",
-                    "next": "Lección siguiente"
-                },
-                {
-                    "video": "film"
-                },
-                {
-                    "documents": "book"
-                }
-            ],
             "content": [
                 {
                     "item_id": 1,
@@ -322,19 +288,19 @@
                     "item_id": 2,
                     "contentName": "Objetivos",
                     "parent_id": 1,
-                    "paragraph": "JavaScript es un lenguaje de programacion multiparadigma con uso comun para el desarrollo web.Como el lenguaje de programacion mas popular del mundo. Desde principiantes hasta verdaderos expertos cualquiera puede encontrar excelentes tutoriales y otros recursos para aprender y mejorar sus habilidades de programacion de JavaScript Y, siempre puede pedir ayuda a algunos de los ingenieros experimentaciones de JavaScript y a los mienbros de nuestra comunidad."
+                    "paragraph": "En un principio diseñado para realizar poco más que un contador y un libro de visitas, PHP ha experimentado en poco tiempo una verdadera revolución y, a partir de sus funciones, en estos momentos se pueden realizar una multitud de tareas útiles para el desarrollo web."
                 }, 
                 {
                     "item_id": 3,
                     "contentName": "Acerca de Php",
                     "parent_id": 1,
-                    "paragraph": ""
+                    "paragraph": "PHP (acrónimo recursivo de PHP: Hypertext Preprocessor) es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web y que puede ser incrustado en HTML. Con PHP puedes desarrollar sitios y aplicaciones de todo tipo. PHP es el motor además de los CMS más populares, como WordPress, Joomla, Drupal o Magento, entre muchos otros. En PHP también encontramos frameworks potentes y muy usados como Laravel o Symfony."
                 },
                 {
                     "item_id": 4,
                     "contentName": "Historia",
                     "parent_id": 1,
-                    "paragraph": ""
+                    "paragraph": " Creado en 1994 por Rasmus Lerdorf, la primera encarnación de PHP era un conjunto simple de ficheros binarios Common Gateway Interface (CGI) escritos en el lenguaje de programación C. Originalmente utilizado para rastrear visitas de su currículum online, llamó al conjunto de scripts Personal Home Page Tools, más frecuentemente referenciado como PHP Tools"
                 },
                 {
                     "item_id": 5,

@@ -21,13 +21,13 @@ export class NavMenu {
 
     options.links.forEach((option) => {
       funcionInsertarMenu(this.createMenu(option));
-     
+
 
     });
   }
 
   createMenu(menu) {
-  
+
     return s5("<li>", { class: "menu-link", "data-option": menu.title })
       .insert([
         s5("<img>", { src: `img/${menu.icon}`, alt: "logo" }),
@@ -59,25 +59,43 @@ export class NavMenu {
         main.appendChild(accordion);
         main.appendChild(contentContainer);
 
+       
+
         const container = document.getElementById("accordion");
         const contentCourse = document.getElementById("contentCourses");
         let formSearch = document.createElement('form');
+        let lesson = document.createElement('div');
+        lesson.id="lessonContainer";
         formSearch.classList.add('searchContent');
         formSearch.innerHTML = `<span class="fas fa-search"></span>
         <input type="text" name="keyword">`;
         container.appendChild(formSearch);
-        
+
         getData("./JSON/cursos.json").then((response) => {
           const course = response.availableCourses[1];
           contentContainer.innerHTML = ` <h2>curso de ${course.name}</h2><nav id="lessonNav">
-          <a href="#"><i class="fas fa-chevron-left"></i> Leccion anterior</a>
-          <a href="#">Leccion siguiente <i class="fas fa-chevron-right"></i></nav>`;
+          <a id="prevBtn" href="#"><i class="fas fa-chevron-left"></i> Leccion anterior</a>
+          <a id="nextBtn" href="#">Leccion siguiente <i class="fas fa-chevron-right"></i></nav>`;
+
+
+          const prevBtn = document.getElementById('prevBtn');
+          prevBtn.addEventListener('click', function(){
+            console.log('clicked');
+
+          });
+
+          const nextBtn = document.getElementById('nextBtn');
+          nextBtn.addEventListener('click', function() {
+              console.log( "works fine");
+          });
+
+
           const lessonNav = document.getElementById('lessonNav');
           course.content.forEach(function (item, index, array) {
             let div = document.createElement('div');
             item.HTMLelement = div;
 
-            
+
             if (item.parent_id == null) {
                 let panelBody = document.createElement('div');
                 let panel = document.createElement('div');
@@ -88,8 +106,39 @@ export class NavMenu {
                 arr.src = 'img/next.png';
                 arr.classList.add('arrow');
                 div.addEventListener("click", function() {
-                  arr.classList.toggle('down');
-                  panel.classList.toggle('open');
+                  lesson.innerHTML = "";
+                  
+                  array.forEach(element => {
+                    if(element.parent_id == item.item_id){
+                      console.log(element);
+                      let article = document.createElement('article');
+                      let title = document.createElement('h2');
+                      let paragraph = document.createElement('p');
+
+                      paragraph.innerHTML = `${element.paragraph}`;
+                      title.innerHTML = `${element.contentName}`;
+                      article.appendChild(title);
+                      article.appendChild(paragraph);
+                      if(element.contentName =="Objetivos"){
+                        article.classList.add('goalsCourse');
+                        article.id = `${element.contentName}` ;
+                      }else{
+                        article.classList.add('contentCourseArticle');
+                        article.id = `${element.contentName}` ;
+
+                      }
+                      lesson.appendChild(article);
+                      contentCourse.appendChild(lesson);
+                    }
+                  });
+                  let activeItems = document.getElementsByClassName('open');
+                  let arrDown = document.getElementsByClassName('down');
+                  if(activeItems.length > 0 && arrDown.length > 0){
+                    activeItems[0].classList.remove('open');
+                    arrDown[0].classList.remove('down');
+                  }
+                  arr.classList.add('down');
+                  panel.classList.add('open');
                 });
                 div.classList.add('tableHeader');
                 div.innerHTML = `<span> ${item.contentName}</span>`;
@@ -98,25 +147,6 @@ export class NavMenu {
                 panel.appendChild(panelBody);
                 container.appendChild(panel);
             }else {
-              let article = document.createElement('article');
-              let title = document.createElement('h2');
-              let paragraph = document.createElement('p');
-
-
-              paragraph.innerHTML = `${item.paragraph}`;
-              title.innerHTML = `${item.contentName}`;
-              article.appendChild(title);
-              article.appendChild(paragraph);
-              if(item.contentName =="Objetivos"){
-                article.classList.add('goalsCourse');
-                article.id = `${item.contentName}` ;
-              }else{
-                article.classList.add('contentCourseArticle');
-                article.id = `${item.contentName}` ;
-
-              }
-              contentCourse.appendChild(article);
-
               let pIndex = array.findIndex(obj => obj.item_id === item.parent_id);
               let parent = array[pIndex];
               let subDiv = document.createElement('div');
