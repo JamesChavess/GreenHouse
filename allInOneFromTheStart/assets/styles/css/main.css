@@ -27,10 +27,9 @@ html{
   font-family: "Copperplate Gothic Bold", "Helvetica", sans-serif;
 }
 
-.header {
-  border-bottom: 1px solid var(--colorTextoOpcion);
-  min-height: 0;
-  min-width: 100%;
+#header {
+  padding: 10px;
+  
 }
 
 .title {
@@ -110,6 +109,7 @@ section {
 }
 
 #welcome{
+  display:block;
   align-items: center;
   padding: 50px;
   z-index: 9;

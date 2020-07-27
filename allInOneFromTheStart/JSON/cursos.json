@@ -55,6 +55,18 @@
                 },
                 {
                     "item_id": 9,
+                    "contentName": "Variables",
+                    "parent_id": 8,
+                    "paragraph" : "son un espacio de memoria en el que guardamos un determinado valor (o dato). ... Por lo cual todas las variables tendrán un tipo de dato (ya sea un tipo de dato primitivo o una clase) y un nombre de identificador"
+                },
+                {
+                    "item_id": 10,
+                    "contentName": "Tipos de Variables",
+                    "parent_id": 8,
+                    "paragraph": "<h6>Variables de instancia (campos no estáticos)</h6> <br> son las variables que están definidas dentro de un objeto pero que no tienen un modificador de estáticas (static). Suelen llevar un modificador de visibilidad (public, private, protected) definiéndose. <h6>Variables de clase (campos estáticos)</h6> "
+                },
+                {
+                    "item_id": 9,
                     "contentName": "Semana 2",
                     "parent_id": null
                 }
@@ -141,12 +153,24 @@
                     "item_id": 10,
                     "contentName": "Tipos de Variables",
                     "parent_id": 8,
-                    "paragraph": "LET La instrucción let declara una variable de alcance local con ámbito de bloque(block scope), la cual, opcionalmente, puede ser inicializada con algún valor.  VAR La sentencia var declara una variable, opcionalmente inicializándola con un valor"
+                    "paragraph": "LET La instrucción let declara una variable de alcance local con ámbito de bloque(block scope), la cual, opcionalmente, puede ser inicializada con algún valor. <br> VAR La sentencia var declara una variable, opcionalmente inicializándola con un valor"
                 },
                 {
                     "item_id": 11,
                     "contentName": "Semana 2",
                     "parent_id": null
+                },
+                {
+                    "item_id": 12,
+                    "contentName": "¿Que es un array?",
+                    "parent_id": 11,
+                    "paragraph" : "es un tipo de dato estructurado que permite almacenar un conjunto de datos homogeneo, es decir, todos ellos del mismo tipo y relacionados. Cada uno de los elementos que componen un vector pueden ser de tipo simple como caracteres, entero o real, o de tipo compuesto o estructurado como son vectores, estructuras, listas"
+                },
+                {
+                    "item_id": 13,
+                    "contentName": "Tipos de array",
+                    "parent_id": 11,
+                    "paragraph" : "<ul>Array.prototype.concat() </ul><ul>Array.prototype.copyWithin() </ul> <ul>Array.prototype.entries()</ul> <ul>Array.prototype.every()</ul>"
                 }
             ]
         },

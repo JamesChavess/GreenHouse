@@ -8,7 +8,7 @@ export class NavMenu {
   }
 
   init() {
-    this.container = s5('<ul>', {'id': "links"}).insertTo(s5("navMenu"));
+    this.container = s5("<ul>", { id: "links" }).insertTo(s5("navMenu"));
 
     getData("./JSON/menu.json").then((response) => {
       this.createOptions(response);
@@ -21,13 +21,12 @@ export class NavMenu {
 
     options.links.forEach((option) => {
       funcionInsertarMenu(this.createMenu(option));
-
-
     });
   }
 
-  createMenu(menu) {
+  
 
+  createMenu(menu) {
     return s5("<li>", { class: "menu-link", "data-option": menu.title })
       .insert([
         s5("<img>", { src: `img/${menu.icon}`, alt: "logo" }),
@@ -44,29 +43,29 @@ export class NavMenu {
         });
 
         e.currentTarget.classList.add("active");
-        document.getElementById('welcome').style.display = 'none';
 
-        const main = document.getElementById('contentContainer');
+        const main = document.getElementById("contentContainer");
         main.innerHTML = "";
 
-        const accordion = document.createElement('aside');
-        const contentContainer = document.createElement('section');
-        contentContainer.classList.add('contentCourse');
+        const accordion = document.createElement("aside");
+        const contentContainer = document.createElement("section");
+        contentContainer.classList.add("contentCourse");
         contentContainer.id = "contentCourses";
-        accordion.classList.add('accordion');
+        accordion.classList.add("accordion");
         accordion.innerHTML = `<div class="accordionContainer">
         <div id="accordion"></div></div>`;
         main.appendChild(accordion);
         main.appendChild(contentContainer);
 
-       
+        let currentLesson;
+        let lessons = [];
 
         const container = document.getElementById("accordion");
         const contentCourse = document.getElementById("contentCourses");
-        let formSearch = document.createElement('form');
-        let lesson = document.createElement('div');
-        lesson.id="lessonContainer";
-        formSearch.classList.add('searchContent');
+        let formSearch = document.createElement("form");
+        let lesson = document.createElement("div");
+        lesson.id = "lessonContainer";
+        formSearch.classList.add("searchContent");
         formSearch.innerHTML = `<span class="fas fa-search"></span>
         <input type="text" name="keyword">`;
         container.appendChild(formSearch);
@@ -77,95 +76,137 @@ export class NavMenu {
           <a id="prevBtn" href="#"><i class="fas fa-chevron-left"></i> Leccion anterior</a>
           <a id="nextBtn" href="#">Leccion siguiente <i class="fas fa-chevron-right"></i></nav>`;
 
+          const prevBtn = document.getElementById("prevBtn");
+          prevBtn.addEventListener("click", function () {
+             console.log(lessons);
+             console.log( "Current lesson: "  + currentLesson);
+             let container = document.getElementsByClassName('lessonContainer');
+             container.innerHTML = ""; 
 
-          const prevBtn = document.getElementById('prevBtn');
-          prevBtn.addEventListener('click', function(){
-            console.log('clicked');
-
+    
+            if (lessons.find(element => element === currentLesson)) {
+              console.log("found");
+            } else {
+              console.log("not found");
+            }
           });
 
-          const nextBtn = document.getElementById('nextBtn');
-          nextBtn.addEventListener('click', function() {
-              console.log( "works fine");
+          const nextBtn = document.getElementById("nextBtn");
+          nextBtn.addEventListener("click", function () {
+            let activeItem = document.getElementsByClassName("open");
+            let arrowDown = document.getElementsByClassName("down");
+            let next = activeItem[0].nextSibling;
+            
+            lesson.innerHTML = "";
+
+            if (activeItem.length > 0 && arrowDown.length > 0) {
+              activeItem[0].classList.remove("open");
+              arrowDown[0].classList.remove("down");
+              if(next){
+                console.log({'selected lesson':activeItem[0]});
+                console.log({'next lesson': parseInt(next.firstChild.getAttribute('data-index'))});
+                next.classList.add("open");
+                next.firstChild.firstChild.classList.add("down");
+                course.content.forEach((element) => {
+                  if (element.parent_id == parseInt(next.firstChild.getAttribute('data-index'))) {
+                    console.log({"next child":element});
+                    let article = document.createElement("article");
+                    let title = document.createElement("h2");
+                    let paragraph = document.createElement("p");
+            
+                    paragraph.innerHTML = `${element.paragraph}`;
+                    title.innerHTML = `${element.contentName}`;
+                    article.appendChild(title);
+                    article.appendChild(paragraph);
+                    if (element.contentName == "Objetivos") {
+                      article.classList.add("goalsCourse");
+                      article.id = `${element.contentName}`;
+                    } else {
+                      article.classList.add("contentCourseArticle");
+                      article.id = `${element.contentName}`;
+                    }
+                    lesson.appendChild(article);
+                    contentCourse.appendChild(lesson);
+                  }
+                });
+              }
+            }
           });
 
-
-          const lessonNav = document.getElementById('lessonNav');
+          const lessonNav = document.getElementById("lessonNav");
           course.content.forEach(function (item, index, array) {
-            let div = document.createElement('div');
+            let div = document.createElement("div");
             item.HTMLelement = div;
-
+            div.setAttribute('data-index',item.item_id);
 
             if (item.parent_id == null) {
-                let panelBody = document.createElement('div');
-                let panel = document.createElement('div');
-                let arr = document.createElement('img');
+              let panelBody = document.createElement("div");
+              let panel = document.createElement("div");
+              let arr = document.createElement("img");
 
-                panel.classList.add('panel');
-                panelBody.classList.add('tableBody');
-                arr.src = 'img/next.png';
-                arr.classList.add('arrow');
-                div.addEventListener("click", function() {
-                  lesson.innerHTML = "";
-                  
-                  array.forEach(element => {
-                    if(element.parent_id == item.item_id){
-                      console.log(element);
-                      let article = document.createElement('article');
-                      let title = document.createElement('h2');
-                      let paragraph = document.createElement('p');
-
-                      paragraph.innerHTML = `${element.paragraph}`;
-                      title.innerHTML = `${element.contentName}`;
-                      article.appendChild(title);
-                      article.appendChild(paragraph);
-                      if(element.contentName =="Objetivos"){
-                        article.classList.add('goalsCourse');
-                        article.id = `${element.contentName}` ;
-                      }else{
-                        article.classList.add('contentCourseArticle');
-                        article.id = `${element.contentName}` ;
-
-                      }
-                      lesson.appendChild(article);
-                      contentCourse.appendChild(lesson);
+              panel.classList.add("panel");
+              panelBody.classList.add("tableBody");
+              arr.src = "img/next.png";
+              arr.classList.add("arrow");
+              lessons.push(index);
+              div.addEventListener("click", function () {
+                lesson.innerHTML = "";
+                let activeItems = document.getElementsByClassName("open");
+                let arrDown = document.getElementsByClassName("down");
+                if (activeItems.length > 0 && arrDown.length > 0) {
+                  activeItems[0].classList.remove("open");
+                  arrDown[0].classList.remove("down");
+                }
+                arr.classList.add("down");
+                panel.classList.add("open");
+                array.forEach((element) => {
+                  if (element.parent_id == item.item_id) {
+                    let article = document.createElement("article");
+                    let title = document.createElement("h2");
+                    let paragraph = document.createElement("p");
+            
+                    paragraph.innerHTML = `${element.paragraph}`;
+                    title.innerHTML = `${element.contentName}`;
+                    article.appendChild(title);
+                    article.appendChild(paragraph);
+                    if (element.contentName == "Objetivos") {
+                      article.classList.add("goalsCourse");
+                      article.id = `${element.contentName}`;
+                    } else {
+                      article.classList.add("contentCourseArticle");
+                      article.id = `${element.contentName}`;
                     }
-                  });
-                  let activeItems = document.getElementsByClassName('open');
-                  let arrDown = document.getElementsByClassName('down');
-                  if(activeItems.length > 0 && arrDown.length > 0){
-                    activeItems[0].classList.remove('open');
-                    arrDown[0].classList.remove('down');
+                    lesson.appendChild(article);
+                    contentCourse.appendChild(lesson);
                   }
-                  arr.classList.add('down');
-                  panel.classList.add('open');
                 });
-                div.classList.add('tableHeader');
-                div.innerHTML = `<span> ${item.contentName}</span>`;
-                div.prepend(arr);
-                panel.appendChild(div);
-                panel.appendChild(panelBody);
-                container.appendChild(panel);
-            }else {
-              let pIndex = array.findIndex(obj => obj.item_id === item.parent_id);
+              });
+              div.classList.add("tableHeader");
+              div.innerHTML = `<span> ${item.contentName}</span>`;
+              div.prepend(arr);
+              panel.appendChild(div);
+              panel.appendChild(panelBody);
+              container.appendChild(panel);
+            } else {
+              let pIndex = array.findIndex(
+                (obj) => obj.item_id === item.parent_id
+              );
               let parent = array[pIndex];
-              let subDiv = document.createElement('div');
-              let subDivChild = document.createElement('p');
+              let subDiv = document.createElement("div");
+              let subDivChild = document.createElement("p");
 
-              subDivChild.setAttribute('class', 'accordionIndex');
+              subDivChild.setAttribute("class", "accordionIndex");
               subDivChild.textContent = item.contentName;
-              subDivChild.addEventListener('click', function() {
-                document.getElementById(item.contentName).scrollIntoView({behavior: 'smooth' });
+              subDivChild.addEventListener("click", function () {
+                document
+                  .getElementById(item.contentName)
+                  .scrollIntoView({ behavior: "smooth" });
               });
               subDiv.appendChild(subDivChild);
               parent.HTMLelement.nextElementSibling.appendChild(subDiv);
             }
           });
         });
-    });
+      });
   }
 }
-
-
-
-
