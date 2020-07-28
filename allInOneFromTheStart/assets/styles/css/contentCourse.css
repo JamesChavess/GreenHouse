@@ -5,8 +5,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    border-bottom: 1px solid var(--colorBordeOpcion);
+    border-bottom: 1px solid silver;
 }
+
 
 #lessonNav a{
     flex: 1 1 auto;
