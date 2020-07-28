@@ -87,7 +87,7 @@ body {
   display: grid;
   /* align-items: flex-start; */
   grid-template-columns: 70px auto;
-  grid-template-rows: 45px auto auto;
+  grid-template-rows: 45px 90px;
   overflow: hidden;
   position: relative;
 }
