@@ -78,39 +78,84 @@ export class NavMenu {
 
           const prevBtn = document.getElementById("prevBtn");
           prevBtn.addEventListener("click", function () {
-             console.log(lessons);
-             console.log( "Current lesson: "  + currentLesson);
-             let container = document.getElementsByClassName('lessonContainer');
-             container.innerHTML = ""; 
+            let activeItem = document.querySelector(".open");
+            let arrowDown = document.querySelector(".down");
+            let prev = activeItem.previousSibling;
+            console.log(prev)
 
-    
-            if (lessons.find(element => element === currentLesson)) {
-              console.log("found");
-            } else {
-              console.log("not found");
+            lesson.innerHTML = "";
+
+            if (activeItem.classList.contains('panel') && arrowDown) {
+              activeItem.classList.remove("open");
+              arrowDown.classList.remove(".down");
+              if(prev){
+                console.log({'current lesson' : activeItem});
+                console.log({ 'prev lesson id' : (prev.firstChild.getAttribute('data-index'))});
+                prev.classList.add("open");
+                prev.firstChild.firstChild.classList.add("down");
+                course.content.forEach((element) =>{
+                  if(element.parent_id == parseInt(prev.firstChild.getAttribute('data-index'))){
+                    console.log({"prev child":element});
+                    let article = document.createElement("article");
+                    let title = document.createElement("h2");
+                    let paragraph = document.createElement("p");
+
+                    paragraph.innerHTML = `${element.paragraph}`;
+                    title.innerHTML = `${element.contentName}` ;
+                    article.appendChild(paragraph);
+                    article.appendChild(title);
+                    if(element.contentName == "objetivos"){
+                      article.classList.add("goalsCourse");
+                      article.id = `${element.contentName}`;
+                    }
+                    else{
+                      article.classList.add("contentCourseArticle");
+                      article.id = `${element.contentName}`;
+                    }
+                    lesson.appendChild(article);
+                    contentCourse.appendChild(lesson);
+
+                  }
+                });
+              }
+              
             }
           });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           const nextBtn = document.getElementById("nextBtn");
           nextBtn.addEventListener("click", function () {
-            let activeItem = document.getElementsByClassName("open");
-            let arrowDown = document.getElementsByClassName("down");
-            let next = activeItem[0].nextSibling;
-            console.log(next);
+            let activeItem = document.querySelector(".open");
+            let arrowDown = document.querySelector(".down");
+            let next = activeItem.nextSibling;
+            console.log(document.body.contains(next));
             
             lesson.innerHTML = "";
 
-            if (activeItem.length > 0 && arrowDown.length > 0) {
-              activeItem[0].classList.remove("open");
-              arrowDown[0].classList.remove("down");
-              if(next){
-                console.log({'selected lesson':activeItem[0]});
-                console.log({'next lesson id': parseInt(next.firstChild.getAttribute('data-index'))});
+            if (document.body.contains(next) && next.classList.contains('panel')) {
+              if(activeItem && arrowDown){
+                activeItem.classList.remove("open");
+                arrowDown.classList.remove("down");
+                console.log({'selected lesson':activeItem});
+                console.log({'next lesson id': next});
+                console.log({'is panel': next.classList.contains('panel')});
                 next.classList.add("open");
                 next.firstChild.firstChild.classList.add("down");
                 course.content.forEach((element) => {
                   if (element.parent_id == parseInt(next.firstChild.getAttribute('data-index'))) {
-                    console.log({"next child":element});
                     let article = document.createElement("article");
                     let title = document.createElement("h2");
                     let paragraph = document.createElement("p");
