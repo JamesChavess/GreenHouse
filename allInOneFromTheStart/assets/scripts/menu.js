@@ -96,6 +96,7 @@ export class NavMenu {
             let activeItem = document.getElementsByClassName("open");
             let arrowDown = document.getElementsByClassName("down");
             let next = activeItem[0].nextSibling;
+            console.log(next);
             
             lesson.innerHTML = "";
 
@@ -104,7 +105,7 @@ export class NavMenu {
               arrowDown[0].classList.remove("down");
               if(next){
                 console.log({'selected lesson':activeItem[0]});
-                console.log({'next lesson': parseInt(next.firstChild.getAttribute('data-index'))});
+                console.log({'next lesson id': parseInt(next.firstChild.getAttribute('data-index'))});
                 next.classList.add("open");
                 next.firstChild.firstChild.classList.add("down");
                 course.content.forEach((element) => {
