@@ -109,7 +109,6 @@ section {
 }
 
 #welcome{
-  display:block;
   align-items: center;
   padding: 50px;
   z-index: 9;

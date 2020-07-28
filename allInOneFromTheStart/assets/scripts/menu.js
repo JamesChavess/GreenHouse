@@ -44,7 +44,7 @@ export class NavMenu {
         e.currentTarget.classList.add("active");
 
         
-
+        document.getElementById('welcome').style.display = "none";
         const main = document.getElementById("contentContainer");
         main.innerHTML = "";
 
@@ -86,6 +86,10 @@ export class NavMenu {
             if (document.body.contains(activeItem) && document.body.contains(arrowDown) && 
             document.body.contains(prev) && prev.classList.contains('panel')) {
                 lesson.innerHTML = "";
+                let lessonTitle = document.createElement('h1');
+                lessonTitle.classList.add('lessonTitle');
+                lessonTitle.innerHTML = `${prev.innerText}`;
+                lesson.appendChild(lessonTitle);
                 activeItem.classList.remove("open");
                 arrowDown.classList.remove("down");
                 console.log({'selected lesson' : activeItem});
@@ -126,6 +130,10 @@ export class NavMenu {
 
             if (document.body.contains(activeItem) && document.body.contains(arrowDown) && document.body.contains(next)) {
               lesson.innerHTML = "";
+              let lessonTitle = document.createElement('h1');
+              lessonTitle.classList.add('lessonTitle');
+              lessonTitle.innerHTML = `${next.innerText}`;
+              lesson.appendChild(lessonTitle);
               activeItem.classList.remove("open");
               arrowDown.classList.remove("down");
               console.log({'selected lesson':activeItem});
@@ -157,10 +165,6 @@ export class NavMenu {
           });
 
           const lessonNav = document.getElementById("lessonNav");
-          let lessonTitle = document.createElement('h1');
-          lessonTitle.classList.add('lessonTitle');
-          lessonTitle.innerHTML = `${course.name}`;
-          lesson.appendChild(lessonTitle);
           course.content.forEach(function (item, index, array) {
             let div = document.createElement("div");
             item.HTMLelement = div;
@@ -178,6 +182,11 @@ export class NavMenu {
               lessons.push(index);
               div.addEventListener("click", function () {
                 lesson.innerHTML = "";
+                let lessonTitle = document.createElement('h1');
+                lessonTitle.classList.add('lessonTitle');
+                lessonTitle.innerHTML = `${item.contentName}`;
+                console.log(lessonTitle);
+                lesson.appendChild(lessonTitle);
                 let activeItems = document.getElementsByClassName("open");
                 let arrDown = document.getElementsByClassName("down");
                 if (activeItems.length > 0 && arrDown.length > 0) {
@@ -223,6 +232,33 @@ export class NavMenu {
               let subDiv = document.createElement("div");
               let subDivChild = document.createElement("p");
 
+              subDivChild.setAttribute("class", "accordionIndex");
+              subDivChild.textContent = item.contentName;
+              subDivChild.addEventListener("click", function () {
+                document
+                  .getElementById(item.contentName)
+                  .scrollIntoView({ behavior: "smooth" });
+              });
+              subDiv.appendChild(subDivChild);
+              parent.HTMLelement.nextElementSibling.appendChild(subDiv);
+              subDivChild.setAttribute("class", "accordionIndex");
+              subDivChild.textContent = item.contentName;
+              subDivChild.addEventListener("click", function () {
+                document
+                  .getElementById(item.contentName)
+                  .scrollIntoView({ behavior: "smooth" });
+              });
+              subDiv.appendChild(subDivChild);
+              parent.HTMLelement.nextElementSibling.appendChild(subDiv);
+              subDivChild.setAttribute("class", "accordionIndex");
+              subDivChild.textContent = item.contentName;
+              subDivChild.addEventListener("click", function () {
+                document
+                  .getElementById(item.contentName)
+                  .scrollIntoView({ behavior: "smooth" });
+              });
+              subDiv.appendChild(subDivChild);
+              parent.HTMLelement.nextElementSibling.appendChild(subDiv);
               subDivChild.setAttribute("class", "accordionIndex");
               subDivChild.textContent = item.contentName;
               subDivChild.addEventListener("click", function () {

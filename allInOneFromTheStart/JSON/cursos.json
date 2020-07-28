@@ -134,43 +134,43 @@
                 },
                 {
                     "item_id": 7,
-                    "contentName": "Array Methods",
-                    "parent_id": 1,
-                    "paragraph": "push(), pop(), map(), findIndex(), indexOf()"
-                },
-                {
-                    "item_id": 8,
                     "contentName": "Semana 1",
                     "parent_id": null
                 },
                 {
-                    "item_id": 9,
+                    "item_id": 8,
                     "contentName": "Variables",
-                    "parent_id": 8,
+                    "parent_id": 7,
                     "paragraph" : "una variable es un recurso de memoria del ordenador reservado para alojar una información. Las variables tienen un continente que puede o no almacenar un contenido. En caso de no tenerlo javascript guarda un espacio de memoria con el valor undefined. Se definen varios tipos de variable según si contienen números, textos, listas"
                 },
                 {
-                    "item_id": 10,
+                    "item_id": 9,
                     "contentName": "Tipos de Variables",
-                    "parent_id": 8,
+                    "parent_id": 7,
                     "paragraph": "LET La instrucción let declara una variable de alcance local con ámbito de bloque(block scope), la cual, opcionalmente, puede ser inicializada con algún valor. <br> VAR La sentencia var declara una variable, opcionalmente inicializándola con un valor"
                 },
                 {
-                    "item_id": 11,
+                    "item_id": 10,
                     "contentName": "Semana 2",
                     "parent_id": null
                 },
                 {
-                    "item_id": 12,
+                    "item_id": 11,
                     "contentName": "¿Que es un array?",
-                    "parent_id": 11,
+                    "parent_id": 10,
                     "paragraph" : "es un tipo de dato estructurado que permite almacenar un conjunto de datos homogeneo, es decir, todos ellos del mismo tipo y relacionados. Cada uno de los elementos que componen un vector pueden ser de tipo simple como caracteres, entero o real, o de tipo compuesto o estructurado como son vectores, estructuras, listas"
                 },
                 {
-                    "item_id": 13,
+                    "item_id": 12,
                     "contentName": "Tipos de array",
-                    "parent_id": 11,
+                    "parent_id": 10,
                     "paragraph" : "<ul>Array.prototype.concat() </ul><ul>Array.prototype.copyWithin() </ul> <ul>Array.prototype.entries()</ul> <ul>Array.prototype.every()</ul>"
+                },
+                {
+                    "item_id": 13,
+                    "contentName": "Array Methods",
+                    "parent_id": 10,
+                    "paragraph": "push(), pop(), map(), findIndex(), indexOf()"
                 }
             ]
         },
