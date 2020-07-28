@@ -180,7 +180,6 @@ export class NavMenu {
                 lesson.innerHTML = "";
                 let activeItems = document.getElementsByClassName("open");
                 let arrDown = document.getElementsByClassName("down");
-                let article = document.createElement("article");
                 if (activeItems.length > 0 && arrDown.length > 0) {
                   activeItems[0].classList.remove("open");
                   arrDown[0].classList.remove("down");
@@ -190,13 +189,12 @@ export class NavMenu {
                 
                 array.forEach((element) => {
                   if (element.parent_id == item.item_id) {
-                    
+                    let article = document.createElement("article");
                     let title = document.createElement("h2");
                     let paragraph = document.createElement("p");
                     paragraph.innerHTML = `${element.paragraph}`;
                     title.innerHTML = `${element.contentName}`;
-                    article.appendChild(title);
-                    article.appendChild(paragraph);
+                    
                     if (element.contentName == "Objetivos") {
                       article.classList.add("goalsCourse");
                       article.id = `${element.contentName}`;
@@ -204,6 +202,8 @@ export class NavMenu {
                       article.classList.add("contentCourseArticle");
                       article.id = `${element.contentName}`;
                     }
+                    article.appendChild(title);
+                    article.appendChild(paragraph);
                     lesson.appendChild(article);
                     contentCourse.appendChild(lesson);
                   }
