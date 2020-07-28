@@ -17,17 +17,23 @@
     color: var(--colorBordeOpcion);
     border-color: 1px solid var(--colorBordeOpcion);
 }
-
+#lessonNav a:hover{
+    color:silver;
+}
 #lessonNav a:first-child{
     border-right: none;
 }
-
 #lessonNav a:last-child{
     border-right: none;
 }
+#lessonNav a:hover{
+    color:silver;
+}
 
-#lessonNav a:nth-child(7){
-    border-right: none;
+.lessonTitle{
+    padding: 35px;
+    text-align: center;
+    font-size: 30pt;
 }
 
 .goalsCourse {

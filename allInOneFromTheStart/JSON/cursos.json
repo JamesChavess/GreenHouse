@@ -136,7 +136,7 @@
                     "item_id": 7,
                     "contentName": "Array Methods",
                     "parent_id": 1,
-                    "paragraph": ""
+                    "paragraph": "push(), pop(), map(), findIndex(), indexOf()"
                 },
                 {
                     "item_id": 8,

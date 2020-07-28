@@ -27,10 +27,10 @@ html{
   font-family: "Copperplate Gothic Bold", "Helvetica", sans-serif;
 }
 
-#header {
-  padding: 10px;
+ #header {
   
-}
+  
+} 
 
 .title {
   display: flex;
@@ -85,7 +85,7 @@ body {
   width: 100%;
   min-height: 100vh;
   display: grid;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   grid-template-columns: 70px auto;
   grid-template-rows: 45px auto auto;
   overflow: hidden;
@@ -120,6 +120,7 @@ section {
   height:100%;
   margin-top: 45px;
   padding-top: 50px;
+
 }
 
 #welcome h3{
