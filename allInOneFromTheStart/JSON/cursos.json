@@ -44,7 +44,7 @@
                 },
                 {
                     "item_id": 7,
-                    "contentName": "",
+                    "contentName": "Eventos",
                     "parent_id": 1,
                     "paragraph" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quae culpa harumnostrum ad vitae aspernatur quasi labore, minus perspiciatis eum perferendis corruptiet iure mollitia ipsa voluptates velit commodi?"
                 },
@@ -247,7 +247,7 @@
                     "contentName": "Introducción",
                     "parent_id": null
                 },
-                {
+               {
                     "item_id": 2,
                     "contentName": "Objetivos",
                     "parent_id": 1,

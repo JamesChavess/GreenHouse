@@ -47,7 +47,6 @@ export class NavMenu {
         document.getElementById('welcome').style.display = "none";
         const main = document.getElementById("contentContainer");
         main.innerHTML = "";
-
         const accordion = document.createElement("aside");
         const contentContainer = document.createElement("section");
         contentContainer.classList.add("contentCourse");
@@ -57,7 +56,8 @@ export class NavMenu {
         <div id="accordion"></div></div>`;
         main.appendChild(accordion);
         main.appendChild(contentContainer);
-
+      });
+/*
         let currentLesson;
         let lessons = [];
 
@@ -241,36 +241,13 @@ export class NavMenu {
               });
               subDiv.appendChild(subDivChild);
               parent.HTMLelement.nextElementSibling.appendChild(subDiv);
-              subDivChild.setAttribute("class", "accordionIndex");
-              subDivChild.textContent = item.contentName;
-              subDivChild.addEventListener("click", function () {
-                document
-                  .getElementById(item.contentName)
-                  .scrollIntoView({ behavior: "smooth" });
-              });
-              subDiv.appendChild(subDivChild);
-              parent.HTMLelement.nextElementSibling.appendChild(subDiv);
-              subDivChild.setAttribute("class", "accordionIndex");
-              subDivChild.textContent = item.contentName;
-              subDivChild.addEventListener("click", function () {
-                document
-                  .getElementById(item.contentName)
-                  .scrollIntoView({ behavior: "smooth" });
-              });
-              subDiv.appendChild(subDivChild);
-              parent.HTMLelement.nextElementSibling.appendChild(subDiv);
-              subDivChild.setAttribute("class", "accordionIndex");
-              subDivChild.textContent = item.contentName;
-              subDivChild.addEventListener("click", function () {
-                document
-                  .getElementById(item.contentName)
-                  .scrollIntoView({ behavior: "smooth" });
-              });
-              subDiv.appendChild(subDivChild);
-              parent.HTMLelement.nextElementSibling.appendChild(subDiv);
             }
           });
         });
+        
       });
-  }
+       */
+    }
+  
 }
+
