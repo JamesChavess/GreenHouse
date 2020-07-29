@@ -1,4 +1,4 @@
-{
+ {
     "availableCourses": [
         {
             "name": "Java",
@@ -46,7 +46,7 @@
                     "item_id": 7,
                     "contentName": "Eventos",
                     "parent_id": 1,
-                    "paragraph" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quae culpa harumnostrum ad vitae aspernatur quasi labore, minus perspiciatis eum perferendis corruptiet iure mollitia ipsa voluptates velit commodi?"
+                    "paragraph" : "<h6>ActionListener</h6> </br> Se produce al hacer click en un componente, también si se pulsa Enter teniendo el foco en el componente. </br> <h6>KeyListener</h6> </br> Se produce al pulsar una tecla. según el método cambiara la forma de pulsar la tecla."
                 },
                 {
                     "item_id": 8,
@@ -251,13 +251,13 @@
                     "item_id": 2,
                     "contentName": "Objetivos",
                     "parent_id": 1,
-                    "paragraph": "Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código. ​ Se trata de un lenguaje de programación multiparadigma, ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional."
+                    "paragraph": ""
                 }, 
                 {
                     "item_id": 3,
                     "contentName": "Acerca de Python",
                     "parent_id": 1,
-                    "paragraph": ""
+                    "paragraph": "Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código. ​ Se trata de un lenguaje de programación multiparadigma, ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional."
                 },
                 {
                     "item_id": 4,
@@ -268,14 +268,14 @@
                 {
                     "item_id": 5,
                     "contentName": "Herramientas",
-                    "parent_id": 1,
-                    "paragraph": ""
+                    "parent_id": 1, 
+                    "paragraph": "Una de las herramientas más utilizadas por los programadores de Python es BeeWare: Esta herramienta te permite escribir tus apps en Python y exportarlas para iOS, Android, Windows, MacOS, Linux, Web and tvOS. <br/>  BOA Constructor: Los desarrolladores en Python cuentan con este entorno de desarrollo integrado (IDE) con una interfaz gráfica de usuario incorporada (GUI) para wxPython. Esta herramienta incluye un inspector de objetos, jerarquías de herencia, un depurador especialmente bueno y ayuda integrada. Evidentemente, está escrito en Python. <br/> Y en cuanto a frameworks, el que más destaca es Django: Un framework web de Python de alto nivel que promueve el desarrollo rápido y al uso del código limpio, diseñado pragmáticamente. Creado por programadores con experiencia, se encarga de facilitar el desarrollo web, para que te puedas centrar en el desarrollo de tu aplicación sin necesidad de tener que reinventae la rueda. Es gratis y open source."
                 },
                 {
                     "item_id": 6,
                     "contentName": "Libros",
                     "parent_id": 1,
-                    "paragraph": ""
+                    "paragraph": "Algunos libros para aprender más acerca de Python: <br/> Python Crash Course. <br/>   Automate the Boring Stuff with Python. <br/> Python Cookbook 3. <br/> Dive Into Python 3. <br/> Fluent Python."
                 },
                 {
                     "item_id": 7,
@@ -287,6 +287,13 @@
                     "item_id": 8,
                     "contentName": "Semana 1",
                     "parent_id": null
+                    
+                },
+                {
+                    "item_id": 9,
+                    "contentName": "Variables en Python.",
+                    "parent_id": 8,
+                    "paragraph": ""
                     
                 },
                 {
@@ -330,19 +337,19 @@
                     "item_id": 5,
                     "contentName": "Herramientas",
                     "parent_id": 1,
-                    "paragraph": ""
+                    "paragraph": "Este es una pequeña lista de frameworks usados para php: </br> Laravel: Es un marco de código abierto lanzado en 2011, dispone de la serie habitual de básicos: rutas, modelos, plantillas, vistas y controladores. También dispone de un sistema de plantillas propio que se llama Blade </br> CodeIgniter: Es un marco de desarrollo sencillo y con gran rendimiento que Framework que trabaja con la mayoría de entornos y servidores. </br> Symfony: es un framework para el desarrollo de aplicaciones web mediante un Modelo-Vista-Controlador."
                 },
                 {
                     "item_id": 6,
                     "contentName": "Libros",
                     "parent_id": 1,
-                    "paragraph": ""
+                    "paragraph": "PHP the roght way </br> Practical PHP testing </br> PHP Reference: Beginner to Intermediate"
                 },
                 {
                     "item_id": 7,
                     "contentName": "Eventos",
                     "parent_id": 1,
-                    "paragraph": ""
+                    "paragraph": "<h4> eventos para el body</h4> </br> onload: se produce al cargarse el contenido de la página web.</br> onunload: se lanza al cargar otro documento o página web. </br> <h4> Eventos para el form </h4> </br> onchange: al modificar un elemento. </br> onreset: al resetear un formulario. </br> onselect: al seleccionar un elemento. </br> onsubmit: al enviar un formulario. </br> <h4> Eventos del Raton </h4> </br> onclick: al hacer clic en un elemento. </br> ondblclick: cuando se hace doble clic en un elemento. </br> onmousemove: al mover el ratón dentro del área que ocupa el elemento."
                 },
                 {
                     "item_id": 8,
@@ -351,8 +358,27 @@
                 },
                 {
                     "item_id": 9,
+                    "contentName": "Variables",
+                    "parent_id": 8,
+                    "paragraph":"la creacion de variables funciona declarandolas como: </br> let: variable definida con un valor que puede cambiar, pero con la limitacion del bloque de codigo. </br> var:variable definida con un valor que puede cambiar, pero con un alcance global. </br> const: variable con un valor definido que no va a cambiar."
+                    
+                },
+                {
+                    "item_id": 10,
+                    "contentName": "Tipos de Datos",
+                    "parent_id": 8,
+                    "paragraph": "los tipos de datos que en el lenguaje PHP se utilizan son: </br> boolean: almacenan valores verdadero o falso (true / false). </br> integer: números enteros. </br> float: números con decimales, usando el punto como separador decimal. </br> string: cadenas de texto."
+                },
+                {
+                    "item_id": 11,
                     "contentName": "Semana 2",
                     "parent_id": null
+                },
+                {
+                    "item_id": 12,
+                    "contentName" : "Sintaxis",
+                    "parent_id" : 11,
+                    "paragraph" :""
                 }
             ]
         }

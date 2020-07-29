@@ -3,6 +3,7 @@
             "icon": "student.svg",
             "title": "Cursos",
             "link": "#",
+            "mainPage": "../img/mainPageCourses.png",
             "options": [
                 {
                     "optionName": "Option 1"
