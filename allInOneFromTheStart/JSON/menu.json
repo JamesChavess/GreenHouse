@@ -1,235 +1,213 @@
 {
-    "links": [{
+    "links": [
+        {
             "icon": "student.svg",
             "title": "Cursos",
             "link": "#",
             "mainPage": "../img/mainPageCourses.png",
             "options": [
+                [
+                    {
+                        "optionName": "Java"
+                    },
+                    {
+                        "id": "1"
+                    }
+                ],
+                [
+                    {
+                        "optionName": "JavaScript"
+                    },
+                    {
+                        "id": "1"
+                    }
+                ],
                 {
-                    "optionName": "Option 1"
-                },
-
-                {
-                    "optionName": "Option 2"
-                },
-
-                {
-                    "optionName": "Option 3"
-                },
-
-                {
-                    "optionName": "Option 4"
-                },
-
-                {
-                    "optionName": "Option 5"
-                },
-
-                {
-                    "optionName": "Option 6"
-                },
-
-                {
-                    "optionName": "Option 7"
-                }
-            ]
-
-            
-
-        },
-        {
-            "icon": "dojo.svg",
-            "title": "Katas",
-            "link": "#",
-            "options": [
-                {
-                    "optionName": "Option 1"
-                },
-
-                {
-                    "optionName": "Option 2"
-                },
-
-                {
-                    "optionName": "Option 3"
-                }
-            ]
-        },
-        {
-            "icon": "puzzle.svg",
-            "title": "Juegos",
-            "link": "#",
-            "options": [
-                {
-                    "optionName": "Option 1"
-                },
-
-                {
-                    "optionName": "Option 2"
-                },
-
-                {
-                    "optionName": "Option 3"
-                },
-
-                {
-                    "optionName": "Option 4"
-                },
-
-                {
-                    "optionName": "Option 5"
-                }
-            ]
-        },
-        {
-
-            "icon": "question.svg",
-            "title": "FAQ",
-            "link": "#",
-            "options": [
-                {
-                    "optionName": "Option 1"
-                },
-
-                {
-                    "optionName": "Option 2"
-                },
-
-                {
-                    "optionName": "Option 3"
-                },
-
-                {
-                    "optionName": "Option 4"
-                },
-
-                {
-                    "optionName": "Option 5"
-                },
-
-                {
-                    "optionName": "Option 6"
-                },
-
-                {
-                    "optionName": "Option 7"
-                },
-
-                {
-                    "optionName": "Option 8"
-                }
-            ]
-        },
-        {
-            "icon": "internet.svg",
-            "title": "Recursos",
-            "link": "#",
-            "options": [
-                {
-                    "optionName": "Option 1"
-                },
-
-                {
-                    "optionName": "Option 2"
-                },
-
-                {
-                    "optionName": "Option 3"
-                },
-
-                {
-                    "optionName": "Option 4"
-                }
-            ]
-        },
-        {
-            "icon": "book.svg",
-            "title": "Glosario",
-            "link": "#",
-            "options": [
-                {
-                    "optionName": "Option 1"
-                },
-
-                {
-                    "optionName": "Option 2"
+                    "optionName": "React.js"
                 },
                 {
-                    "optionName": "Option 3"
-                }
-            ]
-        },
-        {
-            "icon": "project.svg",
-            "title": "Proyectos",
-            "link": "#",
-            "options": [
-                {
-                    "optionName": "Option 1"
+                    "id": "1"
                 },
-
-                {
-                    "optionName": "Option 2"
-                },
-
-                {
-                    "optionName": "Option 3"
-                },
-
-                {
-                    "optionName": "Option 4"
-                }
-            ]
-        },
-
-        {
-            "icon": "target.svg",
-            "title": "Workouts",
-            "link": "#",
-            "options": [
-                {
-                    "optionName": "Option 1"
-                },
-
-                {
-                    "optionName": "Option 2"
-                },
-
-                {
-                    "optionName": "Option 3"
-                }
-            ]
-        },
-
-        {
-            "icon": "student.svg",
-            "title": "Semillero Bullets",
-            "link": "#",
-            "options": [
-                {
-                    "optionName": "Javier Leon"
-                },
-
-                {
-                    "optionName": "James Chaves"
-                },
-
-                {
-                    "optionName": "Miguel Lopez"
-                },
-                {
-                    "optionName": "Miguel Lerma"
-                },
-                {
-                    "optionName": "Josvid Calderon"
-                },
-                {
-                    "optionName": "Jonnatan Rodriguez"
-                },
-                {
-                    "optionName": "Juan Arteaga"
-                }
-            ]
-        }
-    ]
+            {
+                "optionName": "Python"
+            },
+            {
+                "optionName": "PHP"
+            },
+            {
+                "optionName": "Option 6"
+            },
+            {
+                "optionName": "Option 7"
+            }
+        ]
+    },
+    {
+        "icon": "dojo.svg",
+        "title": "Katas",
+        "link": "#",
+        "options": [
+            {
+                "optionName": "Option 1"
+            },
+            {
+                "optionName": "Option 2"
+            },
+            {
+                "optionName": "Option 3"
+            }
+        ]
+    },
+    {
+        "icon": "puzzle.svg",
+        "title": "Juegos",
+        "link": "#",
+        "options": [
+            {
+                "optionName": "Option 1"
+            },
+            {
+                "optionName": "Option 2"
+            },
+            {
+                "optionName": "Option 3"
+            },
+            {
+                "optionName": "Option 4"
+            },
+            {
+                "optionName": "Option 5"
+            }
+        ]
+    },
+    {
+        "icon": "question.svg",
+        "title": "FAQ",
+        "link": "#",
+        "options": [
+            {
+                "optionName": "Option 1"
+            },
+            {
+                "optionName": "Option 2"
+            },
+            {
+                "optionName": "Option 3"
+            },
+            {
+                "optionName": "Option 4"
+            },
+            {
+                "optionName": "Option 5"
+            },
+            {
+                "optionName": "Option 6"
+            },
+            {
+                "optionName": "Option 7"
+            },
+            {
+                "optionName": "Option 8"
+            }
+        ]
+    },
+    {
+        "icon": "internet.svg",
+        "title": "Recursos",
+        "link": "#",
+        "options": [
+            {
+                "optionName": "Option 1"
+            },
+            {
+                "optionName": "Option 2"
+            },
+            {
+                "optionName": "Option 3"
+            },
+            {
+                "optionName": "Option 4"
+            }
+        ]
+    },
+    {
+        "icon": "book.svg",
+        "title": "Glosario",
+        "link": "#",
+        "options": [
+            {
+                "optionName": "Option 1"
+            },
+            {
+                "optionName": "Option 2"
+            },
+            {
+                "optionName": "Option 3"
+            }
+        ]
+    },
+    {
+        "icon": "project.svg",
+        "title": "Proyectos",
+        "link": "#",
+        "options": [
+            {
+                "optionName": "Option 1"
+            },
+            {
+                "optionName": "Option 2"
+            },
+            {
+                "optionName": "Option 3"
+            },
+            {
+                "optionName": "Option 4"
+            }
+        ]
+    },
+    {
+        "icon": "target.svg",
+        "title": "Workouts",
+        "link": "#",
+        "options": [
+            {
+                "optionName": "Option 1"
+            },
+            {
+                "optionName": "Option 2"
+            },
+            {
+                "optionName": "Option 3"
+            }
+        ]
+    },
+    {
+        "icon": "student.svg",
+        "title": "Semillero Bullets",
+        "link": "#",
+        "options": [
+            {
+                "optionName": "Javier Leon"
+            },
+            {
+                "optionName": "James Chaves"
+            },
+            {
+                "optionName": "Miguel Lopez"
+            },
+            {
+                "optionName": "Miguel Lerma"
+            },
+            {
+                "optionName": "Josvid Calderon"
+            },
+            {
+                "optionName": "Jonnatan Rodriguez"
+            },
+            {
+                "optionName": "Juan Arteaga"
+            }
+        ]
+    }
+]
 }

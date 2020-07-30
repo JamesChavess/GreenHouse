@@ -47,16 +47,13 @@ export class Courses {
 
         const accordion = document.createElement("aside");
         const contentContainer = document.createElement("section");
+        accordion.classList.add("accordion");
         contentContainer.classList.add("contentCourse");
         contentContainer.id = "contentCourses";
-        accordion.classList.add("accordion");
         accordion.innerHTML = `<div class="accordionContainer">
         <div id="accordion"></div></div>`;
         main.appendChild(accordion);
         main.appendChild(contentContainer);
-    
-        let currentLesson;
-        let lessons = [];
 
         const container = document.getElementById("accordion");
         const contentCourse = document.getElementById("contentCourses");
@@ -69,10 +66,12 @@ export class Courses {
         container.appendChild(formSearch);
 
         getData("./JSON/cursos.json").then((response) => {
-            const course = response.availableCourses[id];
-            contentContainer.innerHTML = ` <h2>curso de ${course.name}</h2><nav id="lessonNav">
-            <a id="prevBtn" href="#"><i class="fas fa-chevron-left"></i> Leccion anterior</a>
-            <a id="nextBtn" href="#">Leccion siguiente <i class="fas fa-chevron-right"></i></nav>`;
+            // const course = response.availableCourses[id];
+            // console.log(response);
+            // contentContainer.innerHTML = ` <h2>curso de ${course.name}</h2><nav id="lessonNav">
+            // <a id="prevBtn" href="#"><i class="fas fa-chevron-left"></i> Leccion anterior</a>
+            // <a id="nextBtn" href="#">Leccion siguiente <i class="fas fa-chevron-right"></i></nav>`;
+            
 
             const prevBtn = document.getElementById("prevBtn");
             prevBtn.addEventListener("click", function () {

@@ -12,6 +12,7 @@ export class NavMenu {
 
     getData("./JSON/menu.json").then((response) => {
       this.createOptions(response);
+      console.log(response);
     });
   }
 
@@ -20,9 +21,22 @@ export class NavMenu {
     const funcionInsertarMenu = this.utilities.insertComponent(this.container);
 
     options.links.forEach((option) => {
-      funcionInsertarMenu(this.createMenu(option));
+      funcionInsertarMenu(this.createMenu(option)),
+      addEventListener("click", ()=>{ 
+        getData("./JSON/cursos.json").then((response) => {
+          let courses = response.availableCourses[1];
+          courses.content.forEach(function(course){
+            console.log({"course":course});
+            //const courses = response.availableCourses[i]; 
+          });
+        //let chosenOption = courses.filter(function(course) { return courses.name === links.options.name;});
+          
+        //   contentContainer.innerHTML = ` <h2>curso de ${chosenOption.name}</h2><nav id="lessonNav">
+        //  <a id="prevBtn" href="#"><i class="fas fa-chevron-left"></i> Leccion anterior</a>
+        //  <a id="nextBtn" href="#">Leccion siguiente <i class="fas fa-chevron-right"></i></nav>`;
+      });
     });
-  }
+  });}
 
 
   createMenu(menu) {
@@ -55,4 +69,5 @@ export class NavMenu {
     });
   }
 }
+
 

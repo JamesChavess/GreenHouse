@@ -9,6 +9,7 @@
             "content": [
                 {
                     "item_id": 1,
+                    "image":"java.png",
                     "contentName": "Introducción",
                     "parent_id": null
                 }, 
@@ -66,14 +67,44 @@
                     "paragraph": "<h6>Variables de instancia (campos no estáticos)</h6> <br> son las variables que están definidas dentro de un objeto pero que no tienen un modificador de estáticas (static). Suelen llevar un modificador de visibilidad (public, private, protected) definiéndose. <h6>Variables de clase (campos estáticos)</h6> "
                 },
                 {
-                    "item_id": 9,
+                    "item_id": 11,
                     "contentName": "Semana 2",
                     "parent_id": null
+                },
+                {
+                    "item_id": 12,
+                    "contentName": "Operadores",
+                    "parent_id": 11,
+                    "paragraph" : "Un operador lleva a cabo operaciones sobre uno (operador unario), dos (operador binario) o tres (operador ternario) datos u operandos de tipo primitvo devolviendo un valor determinado también de un tipo primitivo. El tipo de valor devuelto tras la evaluación depende del operador y del tipo de los operandos."
+                },
+                {
+                    "item_id": 13,
+                    "contentName": "Operador de asignacion",
+                    "parent_id": 11,
+                    "paragraph": "El operador asignación =, es un operador binario que asigna el valor del término de la derecha al operando de la izquierda. El operando de la izquierda suele ser el identificador de una variable "
+                }, 
+                {
+                    "item_id": 14,                  
+                    "contentName": "Operadores Aritmeticos Incrementales",
+                    "parent_id": 11,
+                    "paragraph": "son operadores unarios (un único operando). El operando puede ser numérico o de tipo char y el resultado es del mismo tipo que el operando. Estos operadores pueden emplearse de dos formas dependiendo de su posición con respecto al operando. <br> acontinuacion te los mostramos: ++ O, -- "
+                }, 
+                { 
+                    "item_id": 15,                
+                    "contentName": "Operadores De Relacion ",
+                    "parent_id": 11,
+                    "paragraph": "Realizan comparaciones entre datos compatibles de tipos primitivos (numéricos, carácter y booleanos) teniendo siempre un resultado booleano. Los operandos booleanos sólo pueden emplear los operadores de igualdad y desigualdad. <br> Estos son: <ul> == </ul> <ul> != </ul> <ul> > </ul> <ul> < </ul> <ul> >= </ul> <ul> <= </ul> "
+                },
+                {  
+                    "item_id": 16,
+                    "contentName": "Operadores De Relacion ",
+                    "parent_id": 11,
+                   "paragraph": "Realizan operaciones sobre datos booleanos y tienen como resultado un valor booleano. En la siguiente tabla se resumen los diferentes operadores de esta categoría. <br> Estos son <ul> ! </ul> <ul> | </ul> <ul> ^ </ul> <ul> & </ul> <ul> || </ul> <ul> && </ul> "
                 }
             ]
         },
         {
-            "name": "JavaScript",
+            "name" : "JavaScript",
             "image": "javaScript.jpg",
             "link": "http://",
             "likes": 68865,
@@ -86,17 +117,9 @@
                 {
                     "type":"video",
                     "link":"#"
-                },
-                {
-                    "type":"book",
-                    "link":"#"
-                },
-                {
-                    "type":"video",
-                    "link":"#"
                 }
             ],
-            "content": [
+            "content": [ 
                 {
                     "item_id": 1,
                     "contentName": "Introducción",
@@ -107,7 +130,7 @@
                     "contentName": "Objetivos",
                     "parent_id": 1,
                     "paragraph": "JavaScript es un lenguaje de programacion multiparadigma con uso comun para el desarrollo web.Como el lenguaje de programacion mas popular del mundo. Desde principiantes hasta verdaderos expertos cualquiera puede encontrar excelentes tutoriales y otros recursos para aprender y mejorar sus habilidades de programacion de JavaScript Y, siempre puede pedir ayuda a algunos de los ingenieros experimentaciones de JavaScript y a los mienbros de nuestra comunidad."
-                }, 
+                },  
                 {
                     "item_id": 3,
                     "contentName": "Acerca de JavaScript",
@@ -124,13 +147,13 @@
                     "item_id": 5,
                     "contentName": "Herramientas",
                     "parent_id": 1,
-                    "paragraph" : "Aqui hay una pequena lista de frameworks in librerias de Javascript <br/> FrameWorks : React.js, Vue.js, BExpress.js, Angular.js, Ember.js, Knockout.js <br/> Libraries : S5, JQuery, Dojo Toolkit, Google polymer, Moo tools, Kendo UI, Modernizr, "
+                    "paragraph"  : "Aqui hay una pequena lista de frameworks in librerias de Javascript <br/> FrameWorks : React.js, Vue.js, BExpress.js, Angular.js, Ember.js, Knockout.js <br/> Libraries : S5, JQuery, Dojo Toolkit, Google polymer, Moo tools, Kendo UI, Modernizr, "
                 },
                 {
                     "item_id": 6,
                     "contentName": "Libros",
                     "parent_id": 1,
-                    "paragraph" : "JavaScript for Kids: A Playful Introduction to Programming by Nick Morgan <br/> You Don’t Know JS by Kyle Simpson<br/> JavaScript Allongé: The Six Edition by Reginald Braithwaite <br/>Composing Software by Eric Elliott<br/> High Performance Browser Networking by Ilya Grigorik <br/> Web Audio API by Boris Smus <br/>Eloquent JavaScript: A Modern Introduction to Programming by Marijn Haverbeke <br/> JavaScript: The Good Parts by Douglas Crockford <br/> Programming JavaScript Applications: Robust Web Architecture with Node, HTML5, and Moderns JS Libraries by Eric Elliott <br/>  Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript by David Herman<br/> JavaScript: The Definitive Guide by David Flanagan"
+                    "paragraph"  : "JavaScript for Kids: A Playful Introduction to Programming by Nick Morgan <br/> You Don’t Know JS by Kyle Simpson<br/> JavaScript Allongé: The Six Edition by Reginald Braithwaite <br/>Composing Software by Eric Elliott<br/> High Performance Browser Networking by Ilya Grigorik <br/> Web Audio API by Boris Smus <br/>Eloquent JavaScript: A Modern Introduction to Programming by Marijn Haverbeke <br/> JavaScript: The Good Parts by Douglas Crockford <br/> Programming JavaScript Applications: Robust Web Architecture with Node, HTML5, and Moderns JS Libraries by Eric Elliott <br/>  Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript by David Herman<br/> JavaScript: The Definitive Guide by David Flanagan"
                 },
                 {
                     "item_id": 7,
@@ -158,7 +181,7 @@
                     "item_id": 11,
                     "contentName": "¿Que es un array?",
                     "parent_id": 10,
-                    "paragraph" : "es un tipo de dato estructurado que permite almacenar un conjunto de datos homogeneo, es decir, todos ellos del mismo tipo y relacionados. Cada uno de los elementos que componen un vector pueden ser de tipo simple como caracteres, entero o real, o de tipo compuesto o estructurado como son vectores, estructuras, listas"
+                     "paragraph" : "es un tipo de dato estructurado que permite almacenar un conjunto de datos homogeneo, es decir, todos ellos del mismo tipo y relacionados. Cada uno de los elementos que componen un vector pueden ser de tipo simple como caracteres, entero o real, o de tipo compuesto o estructurado como son vectores, estructuras, listas"
                 },
                 {
                     "item_id": 12,
@@ -170,7 +193,7 @@
                     "item_id": 13,
                     "contentName": "Array Methods",
                     "parent_id": 10,
-                    "paragraph": "push(), pop(), map(), findIndex(), indexOf()"
+                    "paragraph": "from(): crea una nueva instancia de Array a partir de un objeto iterable </br> isArray(): determina si el valor pasado es un Array </br> of():  crea una nueva instancia Array con un número variable de elementos pasados como argumento, independientemente del número o del tipo. </br>  concat(): se usa para unir dos o más arrays. Este método no cambia los arrays existentes, sino que devuelve un nuevo array. </br> copyWithin(): transfiere una copia  plana de una sección a otra dentro del mismo array ( o contexto similar ), sin modificar su propiedad length y lo devuelve. </br> entries(): retorna un nuevo objeto Array Iterator que contiene los pares clave/valor para cada índice de la matriz. </br> every(): Determina si todos los elementos en el array satisfacen una condición. </br> fill(): cambia todos los elementos en un arreglo por un valor estático, desde el índice start (por defecto 0) hasta el índice end (por defecto array.length). Devuelve el arreglo modificado. </br> filter():crea un nuevo array con todos los elementos que cumplan la condición implementada por la función dada. </br> find(): devuelve el valor del primer elemento del array que cumple la función de prueba proporcionada. </br> findIndex(): devuelve el índice del primer elemento de un array que cumpla con la función de prueba proporcionada. En caso contrario devuelve -1. </br> flat(): crea una nueva matriz con todos los elementos de sub-array concatenados recursivamente hasta la profundidad especificada, (esta API es experimental). </br> flatMap(): primero mapea cada elemento usando una función de mapeo, luego aplana el resultado en una nueva matriz. Es idéntico a un map seguido de un flatten de profundidad 1, pero flatMap es a menudo útil y la fusión de ambos en un método es ligeramente más eficiente, (esta API es experimental). </br> forEach(): ejecuta la función indicada una vez por cada elemento del array. </br> includes(): determina si una matriz incluye un determinado elemento, devuelve true o false según corresponda. </br> indexOf(): retorna el primer índice en el que se puede encontrar un elemento dado en el array, ó retorna -1 si el elemento no esta presente. </br> join(): une todos los elementos de una matriz (o un objeto similar a una matriz) en una cadena y devuelve esta cadena. </br> keys(): devuelve un nuevo objeto  Array Iterator que contiene las claves de índice con las que acceder a cada elemento en el array. </br> lastIndexOf():devuelve el último índice en el que un cierto elemento puede encontrarse en el arreglo, ó -1 si el elemento no se encontrara. El arreglo es recorrido en sentido contrario, empezando por el índice fromIndex. </br> map(): crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos. </br> pop(): elimina el último elemento de un array y lo devuelve. Este método cambia la longitud del array. </br> push(): añade uno o más elementos al final de un array y devuelve la nueva longitud del array. </br> reduce(): ejecuta una función reductora sobre cada elemento de un array, devolviendo como resultado un único valor. </br> reduceRight(): Aplica una función simultáneamente contra un acumulador y cada elemento de un array (de derecha a izquierda) para reducirlo a un único valor. </br> reverse(): invierte el orden de los elementos de un array in place. El primer elemento pasa a ser el último y el último pasa a ser el primero.</br> shift():elimina el primer elemento del array y lo retorna. Este método modifica la longitud del array. </br> slice(): devuelve una copia de una parte del array dentro de un nuevo array empezando por inicio hasta fin (fin no incluido). El array original no se modificará. </br> some():comprueba si al menos un elemento del array cumple con la condición implementada por la función proporcionada. </br> sort(): ordena los elementos de unarreglo (array) localmente y devuelve el arreglo ordenado. La ordenación no es necesariamente estable. El modo de ordenación por defecto responde a la posición del valor del string de acuerdo a su valor Unicode. </br> splice(): cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos. </br> toLocaleString(): devuelve una cadena de texto representando los elementos del array. Los elementos son convertidos a texto usando su método toLocaleString  y dichos Strings son separados por un caracter específico para la localidad (como una coma para la separación de decimales “,”). </br> toSource(): devuelve un string representando el código fuente de un arreglo, (esta API no esta estandarizada).</br> toString(): devuelve una cadena de caracteres representando el array especificado y sus elementos. </br> unshift(): agrega uno o más elementos al inicio del array, y devuelve la nueva longitud del array. </br> values(): devuelve un nuevo objeto Array Iterator que contiene los valores para cada índice del array. "
                 }
             ]
         },
@@ -186,12 +209,12 @@
                     "contentName": "Introducción",
                     "parent_id": null
                     
-                },
+                }, 
                 {
                     "item_id": 2,
-                    "contentName": "Objetivos",
+                    "contentName": "logoa os",
                     "parent_id": 1,
-                    "paragraph": " "
+                    "img": "../img/react.png "
                 }, 
                 {
                     "item_id": 3,
@@ -213,13 +236,13 @@
                 },
                 {
                     "item_id": 6,
-                    "contentName": "Libros",
-                    "parent_id": 1,
+                   "contentName": "Libros",
+                     "parent_id": 1,
                     "paragraph": "Pro React 16 - Adam Freeman  <br/> Learning React - "
                 },
                 {
-                    "item_id": 7,
-                    "contentName": "Eventos",
+                     "item_id": 7,
+                   "contentName": "Eventos",
                     "parent_id": 1,
                     "paragraph": ""
                 },
@@ -234,7 +257,7 @@
                     "parent_id": null
                 }
             ]
-        },
+        }, 
         {
             "name": "Python",
             "image": "python.png",
@@ -253,15 +276,15 @@
                     "parent_id": 1,
                     "paragraph": ""
                 }, 
+                    
                 {
-                    "item_id": 3,
                     "contentName": "Acerca de Python",
                     "parent_id": 1,
                     "paragraph": "Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código. ​ Se trata de un lenguaje de programación multiparadigma, ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional."
                 },
                 {
+                    
                     "item_id": 4,
-                    "contentName": "Historia",
                     "parent_id": 1,
                     "paragraph": "La historia del lenguaje programación Python se remonta hacia finales de los 80s y principio de los 90s1​, su implementación comenzó en diciembre de 19892​ cuando en Navidad Guido Van Rossum que trabajaba en el (CWI) (un centro de investigación holandés de carácter oficial que, entre otras cosas, actualmente alberga la oficina central del W3C) decidió empezar el proyecto como un pasatiempo dándole continuidad al lenguaje de programación ABC del que había formado parte del equipo de desarrollo en el CWI,3​ dicho lenguaje se enfocaba en ser fácil de usar y aprender manteniendo potencia en su desempeño pero el hardware disponible en la época de su creación hacía difícil su uso y el proyecto no trascendió como se esperaba. Van Rossum es por tanto el autor principal de Python y continúa ejerciendo un rol central decidiendo la dirección del lenguaje, en la comunidad de Python se le conoce como Benevolente Dictador Vitalicio (en inglés: Benevolent Dictator for Life, BDFL). El nombre Python viene dado por la afición de Van Rossum al grupo Monty Python."
                 },
@@ -283,7 +306,7 @@
                     "parent_id": 1,
                     "paragraph": ""
                 },
-                {
+                { 
                     "item_id": 8,
                     "contentName": "Semana 1",
                     "parent_id": null
@@ -291,21 +314,40 @@
                 },
                 {
                     "item_id": 9,
-                    "contentName": "Variables en Python.",
+                    "contentName": "Declaración de Variables en Python.",
                     "parent_id": 8,
-                    "paragraph": ""
+                    "paragraph": "Para declarar una variable en Python, basta con sólo escribir el identificador. Ejemplos: 'casa', 'contador', 'numero', 'palabra1', 'palabraUno'. <br/> Dichos identificadores nunca deberían empezar con números, comas, puntos o tildes, y tampoco contener caracteres especiales como tildes, diéresis, etc. <br/> Una vez declarado el identificador sólo quedaría asignarle un valor: color  = 'azul' . "
                     
                 },
                 {
-                    "item_id": 9,
+                    "item_id": 10,
+                    "contentName": "Tipos de Variables en Python.",
+                     "parent_id": 8,
+                   "paragraph": "Números: Los tipos de datos numéricos almacenan valores numéricos. Los objetos numéricos se crean cuando se les asigna un valor. Por ejemplo: var1 = 10. <br/> Strings: Las cadenas en Python se identifican como un conjunto contiguo de caracteres representados en las comillas. Ejemplo: str = 'Hola mundo'. <br/> Listas: Las listas son los tipos de datos compuestos de Python más versátiles. Una lista contiene elementos separados por comas y encerrados entre corchetes. Ejemplo: lista = ['abcd', 738, 4.26, 'John Doe', '0.143']. <br/> Tuplas: Una tupla es otro tipo de datos de secuencia que es similar a la lista. Una tupla consiste en una serie de valores separados por comas. A diferencia de las listas, sin embargo, las tuplas están encerradas entre paréntesis. Ejemplo: tupla = ('abcd', 786, 2.23, 'john', 70.2). <br/> Diccionarios: Los diccionarios de Python son un tipo de tabla hash. Funcionan como matrices asociativas o hashes y consisten en pares clave-valor. Una clave de diccionario puede ser de casi cualquier tipo de dato en Python, pero generalmente son números o cadenas. Los valores, por otro lado, pueden ser cualquier objeto Python arbitrario. Ejemplo: diccionario1 = {'name': 'john', 'code': 6734, 'dept': 'sales'}"
+                },
+                {
+                    "item_id": 11,
                     "contentName": "Semana 2",
-                    "parent_id": null
+                     "parent_id": null
+                },
+                {
+                    "item_id": 12,
+                    "contentName": "Funciones en Python",
+                    "parent_id": 11,
+                    "paragraph": "Para declarar una función en Python basta con usar la keyword 'def' y seguido del identificador que puede ser cualquier palabra. Después el identificador vendrían los parámetros '()' y terminar con dos puntos ':'. Ejemplo: def sumar(numero1, numero2): print  numero1 + numero2."
+                },
+                {
+                    "item_id": 13,
+                    "contentName": "Uso Funciones en Python",
+                    "parent_id":11,
+                    "paragraph": "Para usar funciones en Python hay que escribir su identificador y pasarle sus respectivos parámetros (si existen parámetros en la función). Ejemplo:  numeroUno = 65     numeroDos = 14 <br/> def restarNumeros(num1, num2): print num1 - num2 <br/>  #Usar la función: <br/>  restarNumeros(numeroUno, numeroDos)."
                 }
+
             ]
         },
         {
             "name": "PHP",
-            "image": "php.jpg",
+            "image": "php.png",
             "link": "http://",
             "likes": 56456,
             "comments": 60,
@@ -327,8 +369,9 @@
                     "parent_id": 1,
                     "paragraph": "PHP (acrónimo recursivo de PHP: Hypertext Preprocessor) es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web y que puede ser incrustado en HTML. Con PHP puedes desarrollar sitios y aplicaciones de todo tipo. PHP es el motor además de los CMS más populares, como WordPress, Joomla, Drupal o Magento, entre muchos otros. En PHP también encontramos frameworks potentes y muy usados como Laravel o Symfony."
                 },
-                {
-                    "item_id": 4,
+                    
+                { 
+                   "item_id": 4,
                     "contentName": "Historia",
                     "parent_id": 1,
                     "paragraph": " Creado en 1994 por Rasmus Lerdorf, la primera encarnación de PHP era un conjunto simple de ficheros binarios Common Gateway Interface (CGI) escritos en el lenguaje de programación C. Originalmente utilizado para rastrear visitas de su currículum online, llamó al conjunto de scripts Personal Home Page Tools, más frecuentemente referenciado como PHP Tools"
@@ -342,10 +385,10 @@
                 {
                     "item_id": 6,
                     "contentName": "Libros",
-                    "parent_id": 1,
-                    "paragraph": "PHP the roght way </br> Practical PHP testing </br> PHP Reference: Beginner to Intermediate"
-                },
-                {
+                    "parent_id":  1,
+                    "paragraph" : "PHP the roght way </br> Practical PHP testing </br> PHP Reference: Beginner to Intermediate"
+                }, 
+                { 
                     "item_id": 7,
                     "contentName": "Eventos",
                     "parent_id": 1,
@@ -376,9 +419,15 @@
                 },
                 {
                     "item_id": 12,
-                    "contentName" : "Sintaxis",
+                    "contentName" : "Estructura Condicionales",
                     "parent_id" : 11,
-                    "paragraph" :""
+                    "paragraph" :"Las estructuras condicionales son utilizadas para tomar decisiones en función de que se cumpla o no una determinada condición. <br> son una herramienta esencial en cualquier lenguaje de programación. Sirve para ejecutar instrucciones dependiendo de unos condicionales. "
+                },
+                {
+                    "item_id": 13,
+                    "contentName" : "Bucles",
+                    "parent_id" : 11,
+                    "paragraph" :"Los bucles en PHP son útiles cuando desea ejecutar un fragmento de código repetidamente hasta que una condición se evalúe como falsa. Por lo tanto, el código se ejecuta repetidamente siempre que una condición se evalúe como verdadera y, tan pronto como la condición se evalúe como falsa, la secuencia de comandos continúa ejecutando el código después del bucle."
                 }
             ]
         }
