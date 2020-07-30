@@ -28,9 +28,11 @@ html{
 }
 
  #header {
+  border-bottom: 1px solid silver;
+}
   
   
-} 
+
 
 .title {
   display: flex;
