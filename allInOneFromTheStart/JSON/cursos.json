@@ -15,8 +15,8 @@
                 }, 
                 {
                     "item_id": 2,
-                    "contentName": "Objetivo del curso",
-                    "parent_id": null
+                    "contentName": "Objetivos del curso",
+                    "parent_id": 1
                    
                 },
                 {

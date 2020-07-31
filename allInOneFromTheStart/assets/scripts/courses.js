@@ -1,16 +1,55 @@
 import { getData } from './Repository.js';
 import { HTMLUtilities } from './HTMLUtilities.js';
-import { selectionBar } from './selectionBar.js';
+import { SelectionBar } from './selectionBar.js';
 
 export class Courses {
     constructor(menu) {
         this.menu = menu;
-        this.optionsClass = new SelectionBar();
-        this.createOptions(menu.options);
+        this.SelectionBar = new SelectionBar(menu);
+        this.HTMLUtilities = new HTMLUtilities();
     }
 
-    createOptions({coursesOptions:{options,iconOption,titleOption}}) {
-        this.optionsClass.createOptions(iconOption, titleOption, options);
+    mainPage(){
+        console.log('courses main page');
+        console.log(this.menu);
+        const main = document.getElementById("contentContainer");
+        main.innerHTML = "";
+        this.createCourseOptions();
+        /*let img = document.createElement('img');
+        img.classList.add("mainPage");
+        if(this.menu.mainPage){
+            img.src =  `${this.menu.mainPage}`;
+            main.appendChild(img);
+        }*/
+    }
+
+    createCourseOptions() {
+        this.SelectionBar.createOptions();
+        const _this = this;
+        const options = this.menu.options.map(function(option){
+            console.log(this);
+            const tagA = document.createElement("a");
+            tagA.setAttribute("href", "#");
+            tagA.setAttribute("class", "option-name");
+            tagA.setAttribute("data-index", `${option.option_id}`);
+            tagA.innerHTML = option.optionName;
+            tagA.addEventListener("click", function(e){
+                let index = e.target.dataset.index;
+                let current = document.querySelectorAll(".option-name.selected");
+                current.forEach((value, index) => {
+                    value.classList.remove("selected");
+                });
+                e.target.classList.add("selected");
+                console.log({"option index: ": index});
+                _this.renderCourse(index-1);
+            });
+            return tagA;
+        });
+        options[0].classList.add("selected");
+        options[0].click();
+        const nav = document.querySelector('#optionsContainer');
+        const containerOptions = this.HTMLUtilities.insertComponent(nav);
+        options.forEach(containerOptions);
     }
 
     initAvailableCards() {
@@ -44,7 +83,8 @@ export class Courses {
     }
 
     renderCourse(id){
-
+        const main = document.getElementById('contentContainer');
+        main.innerHTML = "";
         const accordion = document.createElement("aside");
         const contentContainer = document.createElement("section");
         accordion.classList.add("accordion");
@@ -66,12 +106,11 @@ export class Courses {
         container.appendChild(formSearch);
 
         getData("./JSON/cursos.json").then((response) => {
-            // const course = response.availableCourses[id];
-            // console.log(response);
-            // contentContainer.innerHTML = ` <h2>curso de ${course.name}</h2><nav id="lessonNav">
-            // <a id="prevBtn" href="#"><i class="fas fa-chevron-left"></i> Leccion anterior</a>
-            // <a id="nextBtn" href="#">Leccion siguiente <i class="fas fa-chevron-right"></i></nav>`;
-            
+            const course = response.availableCourses[id];
+            console.log(response);
+            contentContainer.innerHTML = ` <h2>curso de ${course.name}</h2><nav id="lessonNav">
+            <a id="prevBtn" href="#"><i class="fas fa-chevron-left"></i> Leccion anterior</a>
+            <a id="nextBtn" href="#">Leccion siguiente <i class="fas fa-chevron-right"></i></nav>`;
 
             const prevBtn = document.getElementById("prevBtn");
             prevBtn.addEventListener("click", function () {
@@ -175,7 +214,6 @@ export class Courses {
                 panelBody.classList.add("tableBody");
                 arr.src = "img/next.png";
                 arr.classList.add("arrow");
-                lessons.push(index);
                 div.addEventListener("click", function () {
                 lesson.innerHTML = "";
                 let lessonTitle = document.createElement('h1');
@@ -199,8 +237,9 @@ export class Courses {
                     let paragraph = document.createElement("p");
                     paragraph.innerHTML = `${element.paragraph}`;
                     title.innerHTML = `${element.contentName}`;
-                    
-                    if (element.contentName == "Objetivos") {
+
+                    let cName = element.contentName.toLowerCase(); 
+                    if (cName.includes("objetivo")) {
                         article.classList.add("goalsCourse");
                         article.id = `${element.contentName}`;
                     } else {

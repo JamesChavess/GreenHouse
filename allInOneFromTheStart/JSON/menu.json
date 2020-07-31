@@ -6,38 +6,34 @@
             "link": "#",
             "mainPage": "../img/mainPageCourses.png",
             "options": [
-                [
-                    {
-                        "optionName": "Java"
-                    },
-                    {
-                        "id": "1"
-                    }
-                ],
-                [
-                    {
-                        "optionName": "JavaScript"
-                    },
-                    {
-                        "id": "1"
-                    }
-                ],
-                {
-                    "optionName": "React.js"
-                },
-                {
-                    "id": "1"
-                },
             {
+                "option_id":1,
+                "optionName": "Java"
+            },
+            
+            {
+                "option_id":2,
+                "optionName": "JavaScript"
+            },
+            
+            {
+                "option_id":3,
+                "optionName": "React.js"
+            },
+            {
+                "option_id":4,
                 "optionName": "Python"
             },
             {
+                "option_id":5,
                 "optionName": "PHP"
             },
             {
+                "option_id":6,
                 "optionName": "Option 6"
             },
             {
+                "option_id":7,
                 "optionName": "Option 7"
             }
         ]
