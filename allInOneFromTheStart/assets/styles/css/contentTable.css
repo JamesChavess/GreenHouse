@@ -1,5 +1,6 @@
 #accordion {
   width: auto;
+  display: grid;
 }
 
 #accordion .tableBody {
@@ -25,6 +26,8 @@
   padding: 10px;
   text-align: left;
   font-size: 15px;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
 }
 
 .arrow {
@@ -50,6 +53,7 @@
   border-radius: 5px;
   outline: none;
   transition: all 0.2s;
+ 
 }
 
 .searchContent input:focus{

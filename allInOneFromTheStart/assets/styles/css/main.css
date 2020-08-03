@@ -29,15 +29,19 @@ html{
 
  #header {
   border-bottom: 1px solid silver;
+  display: grid;
 }
-  
-  
-
 
 .title {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 11fr;
   align-items: center;
   font-size: 16px;
+}
+
+#optionsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr 2fr 5fr;
 }
 
 .title img {
@@ -80,6 +84,7 @@ html{
 .option-name.selected {
   color: var(--colorPrimario);
   border-bottom: 2px solid #01aef2;
+  
 }
 
 body {
@@ -99,15 +104,13 @@ main {
   max-height: 100%;
   top: 0px;
   width: auto;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  display: flex;
   color: #383838;
   position: relative;
 }
 
 section {
   padding: 10px;
+  display: grid;
 }
 
 #welcome{
