@@ -1,32 +1,39 @@
 
 #lessonNav {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
     padding: 5px;
     border-bottom: 1px solid silver;
 }
 
+#lessonContainer {
+    display: grid;
+}
+
 
 #lessonNav a{
-    flex: 1 1 auto;
     padding: 5px;
-    border-right: 1px solid var(--colorBordeOpcion);
     text-decoration: none;
     text-align: center;
     color: var(--colorBordeOpcion);
-    border-color: 1px solid var(--colorBordeOpcion);
+    display: grid;
+
+    
 }
 #lessonNav a:hover{
     color:silver;
 }
 #lessonNav a:first-child{
     border-right: none;
+    grid-template-columns: 8px 190px;
 }
 #lessonNav a:last-child{
-    border-right: none;
+    border-right: none;;
+    grid-template-columns: 190px 8px;
 }
+
 #lessonNav a:hover{
     color:silver;
 }
@@ -51,6 +58,7 @@
 }
 .contentCourseArticle {
     margin: 20px 60px;
+    display: grid;
 }
 
 .contentCourseArticle h2 {
@@ -67,6 +75,7 @@
 .contentCourse{
     margin-left: 270px;
     position:relative;
+    
 } 
 
 
@@ -75,10 +84,8 @@ aside{
     width: auto;
     padding: 10px;
     min-height: calc(100vh - 45px); 
-    display: flex;
-    flex-flow: column wrap;
-    align-self: flex-start;
     border-right: 1px solid silver;
+    display: grid;
 }
 h5{
     margin-bottom: 20px;
@@ -86,3 +93,4 @@ h5{
 h2{
     padding:10px;
 }
+

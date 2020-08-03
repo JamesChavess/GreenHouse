@@ -14,9 +14,10 @@
 .menu-link {
     width: 70px;
     height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 12fr;
+    grid-template-rows: 50px 1px;
+    justify-items: center;
     align-items: center;
     text-decoration: none;
     font-size: 10px;
