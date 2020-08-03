@@ -45,7 +45,7 @@ export class NavMenu {
         value.classList.remove("active");
       });
       e.currentTarget.classList.add("active");
-      document.getElementById('welcome').style.display = "none";
+      Sinco.get('welcome').style.display = "none";
       switch (currentOption) {
         case "Cursos":
           console.log('cursos selected');

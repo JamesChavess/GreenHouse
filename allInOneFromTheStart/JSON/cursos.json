@@ -1,4 +1,4 @@
- {
+{
     "availableCourses": [
         {
             "name": "Java",
@@ -9,45 +9,44 @@
             "content": [
                 {
                     "item_id": 1,
-                    "image":"java.png",
+                    "image": "java.png",
                     "contentName": "Introducción",
                     "parent_id": null
-                }, 
+                },
                 {
                     "item_id": 2,
                     "contentName": "Objetivos del curso",
                     "parent_id": 1
-                   
                 },
                 {
                     "item_id": 3,
                     "contentName": "Acerca de Java",
                     "parent_id": 1,
-                    "paragraph" : "Java es un lenguaje de programación de propósito general que está basado en clases , orientado a objetos y diseñado para tener la menor cantidad posible de dependencias de implementación ."
+                    "paragraph": "Java es un lenguaje de programación de propósito general que está basado en clases , orientado a objetos y diseñado para tener la menor cantidad posible de dependencias de implementación ."
                 },
                 {
                     "item_id": 4,
                     "contentName": "Historia",
                     "parent_id": 1,
-                    "paragraph" : "El lenguaje Java fue desarrollado en sus inicios por James Gosling, en el año 1991. Inicialmente Java era conocido como Oak o Green.La primera versión del lenguaje Java es publicada por Sun Microsystems en 1995. Y es en la versión del lenguaje JDK 1.0.2, cuando pasa a llamarse Java, corría el año 1996. En las primeras versiones de Java 1.1, 1.2 y 1.3 es en la que el lenguaje va tomando forma, con la inclusión de tecnologías como JavaBeans, JDBC para el acceso a base de datos, RMI para las invocaciones en remoto, Collections para la gestión de múltiples estructuras de datos o AWT para el desarrollo gráfico, entre otros."
+                    "paragraph": "El lenguaje Java fue desarrollado en sus inicios por James Gosling, en el año 1991. Inicialmente Java era conocido como Oak o Green.La primera versión del lenguaje Java es publicada por Sun Microsystems en 1995. Y es en la versión del lenguaje JDK 1.0.2, cuando pasa a llamarse Java, corría el año 1996. En las primeras versiones de Java 1.1, 1.2 y 1.3 es en la que el lenguaje va tomando forma, con la inclusión de tecnologías como JavaBeans, JDBC para el acceso a base de datos, RMI para las invocaciones en remoto, Collections para la gestión de múltiples estructuras de datos o AWT para el desarrollo gráfico, entre otros."
                 },
                 {
                     "item_id": 5,
                     "contentName": "Herramientas",
                     "parent_id": 1,
-                    "paragraph" : " LOGSTASH <br/> GRAYLOG2 <br/> NETBEANS <br/> ECLIPSE <br/> INTELLIJ IDEA <br/> GVNIX <br/> CYGWIN <br/> PUTTY \n GITHUB"
+                    "paragraph": " LOGSTASH <br/> GRAYLOG2 <br/> NETBEANS <br/> ECLIPSE <br/> INTELLIJ IDEA <br/> GVNIX <br/> CYGWIN <br/> PUTTY \n GITHUB"
                 },
                 {
                     "item_id": 6,
                     "contentName": "Libros",
                     "parent_id": 1,
-                    "paragraph" : " El gran libro de Java a Fondo 4ª Ed. - Pablo Augusto Sznajdleder \n Java para novatos: Cómo aprender programación orientada a objetos con Java sin desesperarse en el intento: Volume 3 - A. M. Vozmediano \n Aprende a Programar con Java (Informática) - Alfonso Jiménez Marín y Franciso Manuel Pérez Montes\n Java 9 (Títulos Especiales) - Herbert Schildt \n El Libro Negro del Programador: Cómo conseguir una carrera de éxito desarrollando software y cómo evitar los errores habituales - Rafael Gómez Blanes \n Java 9 (MANUALES IMPRESCINDIBLES) - F. Javier Moldes"
+                    "paragraph": " El gran libro de Java a Fondo 4ª Ed. - Pablo Augusto Sznajdleder \n Java para novatos: Cómo aprender programación orientada a objetos con Java sin desesperarse en el intento: Volume 3 - A. M. Vozmediano \n Aprende a Programar con Java (Informática) - Alfonso Jiménez Marín y Franciso Manuel Pérez Montes\n Java 9 (Títulos Especiales) - Herbert Schildt \n El Libro Negro del Programador: Cómo conseguir una carrera de éxito desarrollando software y cómo evitar los errores habituales - Rafael Gómez Blanes \n Java 9 (MANUALES IMPRESCINDIBLES) - F. Javier Moldes"
                 },
                 {
                     "item_id": 7,
                     "contentName": "Eventos",
                     "parent_id": 1,
-                    "paragraph" : "<h6>ActionListener</h6> </br> Se produce al hacer click en un componente, también si se pulsa Enter teniendo el foco en el componente. </br> <h6>KeyListener</h6> </br> Se produce al pulsar una tecla. según el método cambiara la forma de pulsar la tecla."
+                    "paragraph": "<h6>ActionListener</h6> </br> Se produce al hacer click en un componente, también si se pulsa Enter teniendo el foco en el componente. </br> <h6>KeyListener</h6> </br> Se produce al pulsar una tecla. según el método cambiara la forma de pulsar la tecla."
                 },
                 {
                     "item_id": 8,
@@ -58,7 +57,7 @@
                     "item_id": 9,
                     "contentName": "Variables",
                     "parent_id": 8,
-                    "paragraph" : "son un espacio de memoria en el que guardamos un determinado valor (o dato). ... Por lo cual todas las variables tendrán un tipo de dato (ya sea un tipo de dato primitivo o una clase) y un nombre de identificador"
+                    "paragraph": "son un espacio de memoria en el que guardamos un determinado valor (o dato). ... Por lo cual todas las variables tendrán un tipo de dato (ya sea un tipo de dato primitivo o una clase) y un nombre de identificador"
                 },
                 {
                     "item_id": 10,
@@ -75,62 +74,62 @@
                     "item_id": 12,
                     "contentName": "Operadores",
                     "parent_id": 11,
-                    "paragraph" : "Un operador lleva a cabo operaciones sobre uno (operador unario), dos (operador binario) o tres (operador ternario) datos u operandos de tipo primitvo devolviendo un valor determinado también de un tipo primitivo. El tipo de valor devuelto tras la evaluación depende del operador y del tipo de los operandos."
+                    "paragraph": "Un operador lleva a cabo operaciones sobre uno (operador unario), dos (operador binario) o tres (operador ternario) datos u operandos de tipo primitvo devolviendo un valor determinado también de un tipo primitivo. El tipo de valor devuelto tras la evaluación depende del operador y del tipo de los operandos."
                 },
                 {
                     "item_id": 13,
                     "contentName": "Operador de asignacion",
                     "parent_id": 11,
                     "paragraph": "El operador asignación =, es un operador binario que asigna el valor del término de la derecha al operando de la izquierda. El operando de la izquierda suele ser el identificador de una variable "
-                }, 
+                },
                 {
-                    "item_id": 14,                  
+                    "item_id": 14,
                     "contentName": "Operadores Aritmeticos Incrementales",
                     "parent_id": 11,
                     "paragraph": "son operadores unarios (un único operando). El operando puede ser numérico o de tipo char y el resultado es del mismo tipo que el operando. Estos operadores pueden emplearse de dos formas dependiendo de su posición con respecto al operando. <br> acontinuacion te los mostramos: ++ O, -- "
-                }, 
-                { 
-                    "item_id": 15,                
+                },
+                {
+                    "item_id": 15,
                     "contentName": "Operadores De Relacion ",
                     "parent_id": 11,
                     "paragraph": "Realizan comparaciones entre datos compatibles de tipos primitivos (numéricos, carácter y booleanos) teniendo siempre un resultado booleano. Los operandos booleanos sólo pueden emplear los operadores de igualdad y desigualdad. <br> Estos son: <ul> == </ul> <ul> != </ul> <ul> > </ul> <ul> < </ul> <ul> >= </ul> <ul> <= </ul> "
                 },
-                {  
+                {
                     "item_id": 16,
                     "contentName": "Operadores De Relacion ",
                     "parent_id": 11,
-                   "paragraph": "Realizan operaciones sobre datos booleanos y tienen como resultado un valor booleano. En la siguiente tabla se resumen los diferentes operadores de esta categoría. <br> Estos son <ul> ! </ul> <ul> | </ul> <ul> ^ </ul> <ul> & </ul> <ul> || </ul> <ul> && </ul> "
+                    "paragraph": "Realizan operaciones sobre datos booleanos y tienen como resultado un valor booleano. En la siguiente tabla se resumen los diferentes operadores de esta categoría. <br> Estos son <ul> ! </ul> <ul> | </ul> <ul> ^ </ul> <ul> & </ul> <ul> || </ul> <ul> && </ul> "
                 }
             ]
         },
         {
-            "name" : "JavaScript",
+            "name": "JavaScript",
             "image": "javaScript.jpg",
             "link": "http://",
             "likes": 68865,
             "comments": 116,
-            "resources":[
+            "resources": [
                 {
-                    "type":"book",
-                    "link":"#"
+                    "type": "book",
+                    "link": "#"
                 },
                 {
-                    "type":"video",
-                    "link":"#"
+                    "type": "video",
+                    "link": "#"
                 }
             ],
-            "content": [ 
+            "content": [
                 {
                     "item_id": 1,
                     "contentName": "Introducción",
                     "parent_id": null
-                }, 
+                },
                 {
                     "item_id": 2,
                     "contentName": "Objetivos",
                     "parent_id": 1,
                     "paragraph": "JavaScript es un lenguaje de programacion multiparadigma con uso comun para el desarrollo web.Como el lenguaje de programacion mas popular del mundo. Desde principiantes hasta verdaderos expertos cualquiera puede encontrar excelentes tutoriales y otros recursos para aprender y mejorar sus habilidades de programacion de JavaScript Y, siempre puede pedir ayuda a algunos de los ingenieros experimentaciones de JavaScript y a los mienbros de nuestra comunidad."
-                },  
+                },
                 {
                     "item_id": 3,
                     "contentName": "Acerca de JavaScript",
@@ -141,19 +140,19 @@
                     "item_id": 4,
                     "contentName": "Historia",
                     "parent_id": 1,
-                    "paragraph" : "A principios de los años 90, la mayoría de usuarios que se conectaban a Internet lo hacían con módems a una velocidad máxima de 28.8 kbps. En esa época, empezaban a desarrollarse las primeras aplicaciones web y por tanto, las páginas web comenzaban a incluir formularios complejos.Con unas aplicaciones web cada vez más complejas y una velocidad de navegación tan lenta, surgió la necesidad de un lenguaje de programación que se ejecutara en el navegador del usuario. De esta forma, si el usuario no rellenaba correctamente un formulario, no se le hacía esperar mucho tiempo hasta que el servidor volviera a mostrar el formulario indicando los errores existentes.Brendan Eich, un programador que trabajaba en Netscape, pensó que podría solucionar este problema adaptando otras tecnologías existentes (como ScriptEase) al navegador Netscape Navigator 2.0, que iba a lanzarse en 1995. Inicialmente, Eich denominó a su lenguaje LiveScript."
+                    "paragraph": "A principios de los años 90, la mayoría de usuarios que se conectaban a Internet lo hacían con módems a una velocidad máxima de 28.8 kbps. En esa época, empezaban a desarrollarse las primeras aplicaciones web y por tanto, las páginas web comenzaban a incluir formularios complejos.Con unas aplicaciones web cada vez más complejas y una velocidad de navegación tan lenta, surgió la necesidad de un lenguaje de programación que se ejecutara en el navegador del usuario. De esta forma, si el usuario no rellenaba correctamente un formulario, no se le hacía esperar mucho tiempo hasta que el servidor volviera a mostrar el formulario indicando los errores existentes.Brendan Eich, un programador que trabajaba en Netscape, pensó que podría solucionar este problema adaptando otras tecnologías existentes (como ScriptEase) al navegador Netscape Navigator 2.0, que iba a lanzarse en 1995. Inicialmente, Eich denominó a su lenguaje LiveScript."
                 },
                 {
                     "item_id": 5,
                     "contentName": "Herramientas",
                     "parent_id": 1,
-                    "paragraph"  : "Aqui hay una pequena lista de frameworks in librerias de Javascript <br/> FrameWorks : React.js, Vue.js, BExpress.js, Angular.js, Ember.js, Knockout.js <br/> Libraries : S5, JQuery, Dojo Toolkit, Google polymer, Moo tools, Kendo UI, Modernizr, "
+                    "paragraph": "Aqui hay una pequena lista de frameworks in librerias de Javascript <br/> FrameWorks : React.js, Vue.js, BExpress.js, Angular.js, Ember.js, Knockout.js <br/> Libraries : S5, JQuery, Dojo Toolkit, Google polymer, Moo tools, Kendo UI, Modernizr, "
                 },
                 {
                     "item_id": 6,
                     "contentName": "Libros",
                     "parent_id": 1,
-                    "paragraph"  : "JavaScript for Kids: A Playful Introduction to Programming by Nick Morgan <br/> You Don’t Know JS by Kyle Simpson<br/> JavaScript Allongé: The Six Edition by Reginald Braithwaite <br/>Composing Software by Eric Elliott<br/> High Performance Browser Networking by Ilya Grigorik <br/> Web Audio API by Boris Smus <br/>Eloquent JavaScript: A Modern Introduction to Programming by Marijn Haverbeke <br/> JavaScript: The Good Parts by Douglas Crockford <br/> Programming JavaScript Applications: Robust Web Architecture with Node, HTML5, and Moderns JS Libraries by Eric Elliott <br/>  Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript by David Herman<br/> JavaScript: The Definitive Guide by David Flanagan"
+                    "paragraph": "JavaScript for Kids: A Playful Introduction to Programming by Nick Morgan <br/> You Don’t Know JS by Kyle Simpson<br/> JavaScript Allongé: The Six Edition by Reginald Braithwaite <br/>Composing Software by Eric Elliott<br/> High Performance Browser Networking by Ilya Grigorik <br/> Web Audio API by Boris Smus <br/>Eloquent JavaScript: A Modern Introduction to Programming by Marijn Haverbeke <br/> JavaScript: The Good Parts by Douglas Crockford <br/> Programming JavaScript Applications: Robust Web Architecture with Node, HTML5, and Moderns JS Libraries by Eric Elliott <br/>  Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript by David Herman<br/> JavaScript: The Definitive Guide by David Flanagan"
                 },
                 {
                     "item_id": 7,
@@ -164,7 +163,7 @@
                     "item_id": 8,
                     "contentName": "Variables",
                     "parent_id": 7,
-                    "paragraph" : "una variable es un recurso de memoria del ordenador reservado para alojar una información. Las variables tienen un continente que puede o no almacenar un contenido. En caso de no tenerlo javascript guarda un espacio de memoria con el valor undefined. Se definen varios tipos de variable según si contienen números, textos, listas"
+                    "paragraph": "una variable es un recurso de memoria del ordenador reservado para alojar una información. Las variables tienen un continente que puede o no almacenar un contenido. En caso de no tenerlo javascript guarda un espacio de memoria con el valor undefined. Se definen varios tipos de variable según si contienen números, textos, listas"
                 },
                 {
                     "item_id": 9,
@@ -181,13 +180,13 @@
                     "item_id": 11,
                     "contentName": "¿Que es un array?",
                     "parent_id": 10,
-                     "paragraph" : "es un tipo de dato estructurado que permite almacenar un conjunto de datos homogeneo, es decir, todos ellos del mismo tipo y relacionados. Cada uno de los elementos que componen un vector pueden ser de tipo simple como caracteres, entero o real, o de tipo compuesto o estructurado como son vectores, estructuras, listas"
+                    "paragraph": "es un tipo de dato estructurado que permite almacenar un conjunto de datos homogeneo, es decir, todos ellos del mismo tipo y relacionados. Cada uno de los elementos que componen un vector pueden ser de tipo simple como caracteres, entero o real, o de tipo compuesto o estructurado como son vectores, estructuras, listas"
                 },
                 {
                     "item_id": 12,
                     "contentName": "Tipos de array",
                     "parent_id": 10,
-                    "paragraph" : "<ul>Array.prototype.concat() </ul><ul>Array.prototype.copyWithin() </ul> <ul>Array.prototype.entries()</ul> <ul>Array.prototype.every()</ul>"
+                    "paragraph": "<ul>Array.prototype.concat() </ul><ul>Array.prototype.copyWithin() </ul> <ul>Array.prototype.entries()</ul> <ul>Array.prototype.every()</ul>"
                 },
                 {
                     "item_id": 13,
@@ -208,14 +207,13 @@
                     "item_id": 1,
                     "contentName": "Introducción",
                     "parent_id": null
-                    
-                }, 
+                },
                 {
                     "item_id": 2,
-                    "contentName": "logoa os",
+                    "contentName": "logo",
                     "parent_id": 1,
-                    "img": "../img/react.png "
-                }, 
+                    "img": "./img/react.png "
+                },
                 {
                     "item_id": 3,
                     "contentName": "Acerca de React.js",
@@ -236,13 +234,13 @@
                 },
                 {
                     "item_id": 6,
-                   "contentName": "Libros",
-                     "parent_id": 1,
+                    "contentName": "Libros",
+                    "parent_id": 1,
                     "paragraph": "Pro React 16 - Adam Freeman  <br/> Learning React - "
                 },
                 {
-                     "item_id": 7,
-                   "contentName": "Eventos",
+                    "item_id": 7,
+                    "contentName": "Eventos",
                     "parent_id": 1,
                     "paragraph": ""
                 },
@@ -253,11 +251,41 @@
                 },
                 {
                     "item_id": 9,
+                    "contentName": "Custom Environment Variables",
+                    "parent_id": 8,
+                    "paragraph": "Las variables de entorno se incrustan durante el tiempo de construcción . Dado que la aplicación Create React produce un paquete HTML / CSS / JS estático, no puede leerlos en tiempo de ejecución. Para leerlos en tiempo de ejecución, necesitará cargar HTML en la memoria del servidor y reemplazar los marcadores de posición en tiempo de ejecución, como se describe aquí . Alternativamente, puede reconstruir la aplicación en el servidor cada vez que los cambie."
+                },
+                {
+                    "item_id": 10,
+                    "contentName": "Un componente simple",
+                    "parent_id": 8,
+                    "paragraph": "Los componentes React implementan un render()método que toma datos de entrada y devuelve qué mostrar. Este ejemplo utiliza una sintaxis similar a XML llamada JSX. Se puede acceder a los datos de entrada que se pasan al componente a render()través de this.props."
+                },
+                {
+                    "item_id": 11,
+                    "contentName": "Un componente con estado",
+                    "parent_id": 8,
+                    "paragraph": "Además de tomar datos de entrada (a los que se accede mediante this.props), un componente puede mantener datos de estado internos (a los que se accede mediante this.state). Cuando los datos de estado de un componente cambian, el marcado representado se actualizará volviendo a invocar render()."
+                },
+                {
+                    "item_id": 12,
                     "contentName": "Semana 2",
                     "parent_id": null
+                },
+                {
+                    "item_id": 13,
+                    "contentName": "Una aplicación",
+                    "parent_id": 12,
+                    "paragraph": "Usando propsy state, podemos armar una pequeña aplicación de Todo. Aunque los controladores de eventos parecen procesarse en línea, se recopilarán e implementarán mediante la delegación de eventos."
+                },
+                {
+                    "item_id" : 14,
+                    "contentName" : "Un componente que usa complementos externos",
+                    "parent_id" : 12,
+                    "paragraph" : "React le permite interactuar con otras bibliotecas y marcos."
                 }
             ]
-        }, 
+        },
         {
             "name": "Python",
             "image": "python.png",
@@ -270,20 +298,18 @@
                     "contentName": "Introducción",
                     "parent_id": null
                 },
-               {
+                {
                     "item_id": 2,
                     "contentName": "Objetivos",
                     "parent_id": 1,
                     "paragraph": ""
-                }, 
-                    
+                },
                 {
                     "contentName": "Acerca de Python",
                     "parent_id": 1,
                     "paragraph": "Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código. ​ Se trata de un lenguaje de programación multiparadigma, ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional."
                 },
                 {
-                    
                     "item_id": 4,
                     "parent_id": 1,
                     "paragraph": "La historia del lenguaje programación Python se remonta hacia finales de los 80s y principio de los 90s1​, su implementación comenzó en diciembre de 19892​ cuando en Navidad Guido Van Rossum que trabajaba en el (CWI) (un centro de investigación holandés de carácter oficial que, entre otras cosas, actualmente alberga la oficina central del W3C) decidió empezar el proyecto como un pasatiempo dándole continuidad al lenguaje de programación ABC del que había formado parte del equipo de desarrollo en el CWI,3​ dicho lenguaje se enfocaba en ser fácil de usar y aprender manteniendo potencia en su desempeño pero el hardware disponible en la época de su creación hacía difícil su uso y el proyecto no trascendió como se esperaba. Van Rossum es por tanto el autor principal de Python y continúa ejerciendo un rol central decidiendo la dirección del lenguaje, en la comunidad de Python se le conoce como Benevolente Dictador Vitalicio (en inglés: Benevolent Dictator for Life, BDFL). El nombre Python viene dado por la afición de Van Rossum al grupo Monty Python."
@@ -291,7 +317,7 @@
                 {
                     "item_id": 5,
                     "contentName": "Herramientas",
-                    "parent_id": 1, 
+                    "parent_id": 1,
                     "paragraph": "Una de las herramientas más utilizadas por los programadores de Python es BeeWare: Esta herramienta te permite escribir tus apps en Python y exportarlas para iOS, Android, Windows, MacOS, Linux, Web and tvOS. <br/>  BOA Constructor: Los desarrolladores en Python cuentan con este entorno de desarrollo integrado (IDE) con una interfaz gráfica de usuario incorporada (GUI) para wxPython. Esta herramienta incluye un inspector de objetos, jerarquías de herencia, un depurador especialmente bueno y ayuda integrada. Evidentemente, está escrito en Python. <br/> Y en cuanto a frameworks, el que más destaca es Django: Un framework web de Python de alto nivel que promueve el desarrollo rápido y al uso del código limpio, diseñado pragmáticamente. Creado por programadores con experiencia, se encarga de facilitar el desarrollo web, para que te puedas centrar en el desarrollo de tu aplicación sin necesidad de tener que reinventae la rueda. Es gratis y open source."
                 },
                 {
@@ -306,29 +332,27 @@
                     "parent_id": 1,
                     "paragraph": ""
                 },
-                { 
+                {
                     "item_id": 8,
                     "contentName": "Semana 1",
                     "parent_id": null
-                    
                 },
                 {
                     "item_id": 9,
                     "contentName": "Declaración de Variables en Python.",
                     "parent_id": 8,
                     "paragraph": "Para declarar una variable en Python, basta con sólo escribir el identificador. Ejemplos: 'casa', 'contador', 'numero', 'palabra1', 'palabraUno'. <br/> Dichos identificadores nunca deberían empezar con números, comas, puntos o tildes, y tampoco contener caracteres especiales como tildes, diéresis, etc. <br/> Una vez declarado el identificador sólo quedaría asignarle un valor: color  = 'azul' . "
-                    
                 },
                 {
                     "item_id": 10,
                     "contentName": "Tipos de Variables en Python.",
-                     "parent_id": 8,
-                   "paragraph": "Números: Los tipos de datos numéricos almacenan valores numéricos. Los objetos numéricos se crean cuando se les asigna un valor. Por ejemplo: var1 = 10. <br/> Strings: Las cadenas en Python se identifican como un conjunto contiguo de caracteres representados en las comillas. Ejemplo: str = 'Hola mundo'. <br/> Listas: Las listas son los tipos de datos compuestos de Python más versátiles. Una lista contiene elementos separados por comas y encerrados entre corchetes. Ejemplo: lista = ['abcd', 738, 4.26, 'John Doe', '0.143']. <br/> Tuplas: Una tupla es otro tipo de datos de secuencia que es similar a la lista. Una tupla consiste en una serie de valores separados por comas. A diferencia de las listas, sin embargo, las tuplas están encerradas entre paréntesis. Ejemplo: tupla = ('abcd', 786, 2.23, 'john', 70.2). <br/> Diccionarios: Los diccionarios de Python son un tipo de tabla hash. Funcionan como matrices asociativas o hashes y consisten en pares clave-valor. Una clave de diccionario puede ser de casi cualquier tipo de dato en Python, pero generalmente son números o cadenas. Los valores, por otro lado, pueden ser cualquier objeto Python arbitrario. Ejemplo: diccionario1 = {'name': 'john', 'code': 6734, 'dept': 'sales'}"
+                    "parent_id": 8,
+                    "paragraph": "Números: Los tipos de datos numéricos almacenan valores numéricos. Los objetos numéricos se crean cuando se les asigna un valor. Por ejemplo: var1 = 10. <br/> Strings: Las cadenas en Python se identifican como un conjunto contiguo de caracteres representados en las comillas. Ejemplo: str = 'Hola mundo'. <br/> Listas: Las listas son los tipos de datos compuestos de Python más versátiles. Una lista contiene elementos separados por comas y encerrados entre corchetes. Ejemplo: lista = ['abcd', 738, 4.26, 'John Doe', '0.143']. <br/> Tuplas: Una tupla es otro tipo de datos de secuencia que es similar a la lista. Una tupla consiste en una serie de valores separados por comas. A diferencia de las listas, sin embargo, las tuplas están encerradas entre paréntesis. Ejemplo: tupla = ('abcd', 786, 2.23, 'john', 70.2). <br/> Diccionarios: Los diccionarios de Python son un tipo de tabla hash. Funcionan como matrices asociativas o hashes y consisten en pares clave-valor. Una clave de diccionario puede ser de casi cualquier tipo de dato en Python, pero generalmente son números o cadenas. Los valores, por otro lado, pueden ser cualquier objeto Python arbitrario. Ejemplo: diccionario1 = {'name': 'john', 'code': 6734, 'dept': 'sales'}"
                 },
                 {
                     "item_id": 11,
                     "contentName": "Semana 2",
-                     "parent_id": null
+                    "parent_id": null
                 },
                 {
                     "item_id": 12,
@@ -339,10 +363,9 @@
                 {
                     "item_id": 13,
                     "contentName": "Uso Funciones en Python",
-                    "parent_id":11,
+                    "parent_id": 11,
                     "paragraph": "Para usar funciones en Python hay que escribir su identificador y pasarle sus respectivos parámetros (si existen parámetros en la función). Ejemplo:  numeroUno = 65     numeroDos = 14 <br/> def restarNumeros(num1, num2): print num1 - num2 <br/>  #Usar la función: <br/>  restarNumeros(numeroUno, numeroDos)."
                 }
-
             ]
         },
         {
@@ -356,22 +379,21 @@
                     "item_id": 1,
                     "contentName": "Introducción",
                     "parent_id": null
-                }, 
+                },
                 {
                     "item_id": 2,
                     "contentName": "Objetivos",
                     "parent_id": 1,
                     "paragraph": "En un principio diseñado para realizar poco más que un contador y un libro de visitas, PHP ha experimentado en poco tiempo una verdadera revolución y, a partir de sus funciones, en estos momentos se pueden realizar una multitud de tareas útiles para el desarrollo web."
-                }, 
+                },
                 {
                     "item_id": 3,
                     "contentName": "Acerca de Php",
                     "parent_id": 1,
                     "paragraph": "PHP (acrónimo recursivo de PHP: Hypertext Preprocessor) es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web y que puede ser incrustado en HTML. Con PHP puedes desarrollar sitios y aplicaciones de todo tipo. PHP es el motor además de los CMS más populares, como WordPress, Joomla, Drupal o Magento, entre muchos otros. En PHP también encontramos frameworks potentes y muy usados como Laravel o Symfony."
                 },
-                    
-                { 
-                   "item_id": 4,
+                {
+                    "item_id": 4,
                     "contentName": "Historia",
                     "parent_id": 1,
                     "paragraph": " Creado en 1994 por Rasmus Lerdorf, la primera encarnación de PHP era un conjunto simple de ficheros binarios Common Gateway Interface (CGI) escritos en el lenguaje de programación C. Originalmente utilizado para rastrear visitas de su currículum online, llamó al conjunto de scripts Personal Home Page Tools, más frecuentemente referenciado como PHP Tools"
@@ -385,10 +407,10 @@
                 {
                     "item_id": 6,
                     "contentName": "Libros",
-                    "parent_id":  1,
-                    "paragraph" : "PHP the roght way </br> Practical PHP testing </br> PHP Reference: Beginner to Intermediate"
-                }, 
-                { 
+                    "parent_id": 1,
+                    "paragraph": "PHP the roght way </br> Practical PHP testing </br> PHP Reference: Beginner to Intermediate"
+                },
+                {
                     "item_id": 7,
                     "contentName": "Eventos",
                     "parent_id": 1,
@@ -403,8 +425,7 @@
                     "item_id": 9,
                     "contentName": "Variables",
                     "parent_id": 8,
-                    "paragraph":"la creacion de variables funciona declarandolas como: </br> let: variable definida con un valor que puede cambiar, pero con la limitacion del bloque de codigo. </br> var:variable definida con un valor que puede cambiar, pero con un alcance global. </br> const: variable con un valor definido que no va a cambiar."
-                    
+                    "paragraph": "la creacion de variables funciona declarandolas como: </br> let: variable definida con un valor que puede cambiar, pero con la limitacion del bloque de codigo. </br> var:variable definida con un valor que puede cambiar, pero con un alcance global. </br> const: variable con un valor definido que no va a cambiar."
                 },
                 {
                     "item_id": 10,
@@ -419,15 +440,15 @@
                 },
                 {
                     "item_id": 12,
-                    "contentName" : "Estructura Condicionales",
-                    "parent_id" : 11,
-                    "paragraph" :"Las estructuras condicionales son utilizadas para tomar decisiones en función de que se cumpla o no una determinada condición. <br> son una herramienta esencial en cualquier lenguaje de programación. Sirve para ejecutar instrucciones dependiendo de unos condicionales. "
+                    "contentName": "Estructura Condicionales",
+                    "parent_id": 11,
+                    "paragraph": "Las estructuras condicionales son utilizadas para tomar decisiones en función de que se cumpla o no una determinada condición. <br> son una herramienta esencial en cualquier lenguaje de programación. Sirve para ejecutar instrucciones dependiendo de unos condicionales. "
                 },
                 {
                     "item_id": 13,
-                    "contentName" : "Bucles",
-                    "parent_id" : 11,
-                    "paragraph" :"Los bucles en PHP son útiles cuando desea ejecutar un fragmento de código repetidamente hasta que una condición se evalúe como falsa. Por lo tanto, el código se ejecuta repetidamente siempre que una condición se evalúe como verdadera y, tan pronto como la condición se evalúe como falsa, la secuencia de comandos continúa ejecutando el código después del bucle."
+                    "contentName": "Bucles",
+                    "parent_id": 11,
+                    "paragraph": "Los bucles en PHP son útiles cuando desea ejecutar un fragmento de código repetidamente hasta que una condición se evalúe como falsa. Por lo tanto, el código se ejecuta repetidamente siempre que una condición se evalúe como verdadera y, tan pronto como la condición se evalúe como falsa, la secuencia de comandos continúa ejecutando el código después del bucle."
                 }
             ]
         }
