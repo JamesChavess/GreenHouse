@@ -1,71 +1,17 @@
-import { getData } from "./Repository.js";
-import { HTMLUtilities } from "./HTMLUtilities.js";
-import { SelectionBar } from "./selectionBar.js";
-
+import { getData } from './Repository.js';
+import { HTMLUtilities } from './HTMLUtilities.js';
+import { selectionBar } from './selectionBar.js';
 
 export class Courses {
-  constructor(menu) {
-    this.menu = menu;
-    this.SelectionBar = new SelectionBar(menu);
-    this.HTMLUtilities = new HTMLUtilities();
-  }
+    constructor(menu) {
+        this.menu = menu;
+        this.optionsClass = new SelectionBar();
+        this.createOptions(menu.options);
+    }
 
-  mainPage() {
-    console.log("courses main page");
-    console.log(this.menu);
-    const main = Sinco.get("contentContainer");
-    main.innerHTML = "";
-    this.createCourseOptions();
-  }
-
-  createCourseOptions() {
-    this.SelectionBar.createOptions();
-    const _this = this;
-    const options = this.menu.options.map(function (option) {
-      return s5("<a>", {
-        class: "option-name",
-        "data-index": `${option.option_id}`,
-      }).addEvent("click", function (e) {
-        let index = e.target.dataset.index;
-        let current = document.querySelectorAll(".option-name.selected");
-        current.forEach((value, index) => {
-          value.classList.remove("selected");
-        });
-        e.target.classList.add("selected");
-        console.log({ "option index: ": index });
-        _this.renderCourse(index - 1);
-      });
-      
-      /*const tagA = document.createElement("a");
-      tagA.setAttribute("href", "#");
-      tagA.setAttribute("class", "option-name");
-      tagA.setAttribute("data-index", `${option.option_id}`);
-      tagA.innerHTML = option.optionName;
-      tagA.addEvent("click", function (e) {
-        let index = e.target.dataset.index;
-        let current = document.querySelectorAll(".option-name.selected");
-        current.forEach((value, index) => {
-          value.classList.remove("selected");
-        });
-        e.target.classList.add("selected");
-        console.log({ "option index: ": index });
-        _this.renderCourse(index - 1);
-      });
-      console.log(tagA);
-      return tagA;*/
-    });
-    options[0].classList.add("selected");
-    options[0].click();
-    const nav = s5("#optionsContainer");
-    const containerOptions = this.HTMLUtilities.insertComponent(nav);
-    options.forEach(containerOptions);
-  }
-
-  initAvailableCards() {
-    getData("./JSON/cursos.json").then((response) => {
-      this.createAvailableCards(response);
-    });
-  }
+    createOptions({coursesOptions:{options,iconOption,titleOption}}) {
+        this.optionsClass.createOptions(iconOption, titleOption, options);
+    }
 
   createAvailableCards(cardsJSON) {
     const cards = cardsJSON.availableCourses.map(this.createCard);
@@ -89,17 +35,14 @@ export class Courses {
     ]);
    }
 
-  renderCourse(id) {
-    const main = Sinco.get("contentContainer");
-    main.innerHTML = "";
-    const accordion = s5("<aside>", {'class':"accordion"});
-    const contentContainer = s5("<section>",{'class': "contentCourse"});
-    /*const accordion = document.createElement("aside");
-    const contentContainer = document.createElement("section");
-    accordion.classList.add("accordion");
-    contentContainer.classList.add("contentCourse");*/
-    contentContainer.id = "contentCourses";
-    accordion.innerHTML = `<div class="accordionContainer">
+    renderCourse(id){
+
+        const accordion = document.createElement("aside");
+        const contentContainer = document.createElement("section");
+        accordion.classList.add("accordion");
+        contentContainer.classList.add("contentCourse");
+        contentContainer.id = "contentCourses";
+        accordion.innerHTML = `<div class="accordionContainer">
         <div id="accordion"></div></div>`;
     main.appendChild(accordion);
     main.appendChild(contentContainer);
@@ -116,12 +59,13 @@ export class Courses {
         <input type="text" name="keyword">`;
     container.appendChild(formSearch);
 
-    getData("./JSON/cursos.json").then((response) => {
-      const course = response.availableCourses[id];
-      console.log(response);
-      contentContainer.innerHTML = ` <h2>curso de ${course.name}</h2><nav id="lessonNav">
-            <a id="prevBtn" href="#"><i class="fas fa-chevron-left"></i> Leccion anterior</a>
-            <a id="nextBtn" href="#">Leccion siguiente <i class="fas fa-chevron-right"></i></nav>`;
+        getData("./JSON/cursos.json").then((response) => {
+            // const course = response.availableCourses[id];
+            // console.log(response);
+            // contentContainer.innerHTML = ` <h2>curso de ${course.name}</h2><nav id="lessonNav">
+            // <a id="prevBtn" href="#"><i class="fas fa-chevron-left"></i> Leccion anterior</a>
+            // <a id="nextBtn" href="#">Leccion siguiente <i class="fas fa-chevron-right"></i></nav>`;
+            
 
       const prevBtn = Sinco.get("prevBtn");
       prevBtn.addEvent("click", function () {
@@ -244,37 +188,62 @@ export class Courses {
           let panel = document.createElement("div");
           let arr = document.createElement("img");
 
-          panel.classList.add("panel");
-          panelBody.classList.add("tableBody");
-          arr.src = "img/next.png";
-          arr.classList.add("arrow");*/
-          div.addEvent("click", function () {
-            lesson.innerHTML = "";
-            let lessonTitle = s5("<h1>",{'class': "lessonTitle"});
-           /* let lessonTitle = document.createElement("h1");
-            lessonTitle.classList.add("lessonTitle");*/
-            lessonTitle.innerHTML = `${item.contentName}`;
-            console.log(lessonTitle);
-            lesson.appendChild(lessonTitle);
-            let activeItems = s5(".open");
-            let arrDown = s5(".down");
-            if (activeItems.length > 0 && arrDown.length > 0) {
-              activeItems[0].classList.remove("open");
-              arrDown[0].classList.remove("down");
-            }
-            arr.classList.add("down");
-            panel.classList.add("open");
-
-            array.forEach((element) => {
-              if (element.parent_id == item.item_id) {
-                  let article = s5("<article>");
-                  let title = s5("<h2>");
-                  let paragraph = s5("<p>");
-                /*let article = document.createElement("article");
-                let title = document.createElement("h2");
-                let paragraph = document.createElement("p");*/
-                paragraph.innerHTML = `${element.paragraph}`;
-                title.innerHTML = `${element.contentName}`;
+                panel.classList.add("panel");
+                panelBody.classList.add("tableBody");
+                arr.src = "img/next.png";
+                arr.classList.add("arrow");
+                lessons.push(index);
+                div.addEventListener("click", function () {
+                lesson.innerHTML = "";
+                let lessonTitle = document.createElement('h1');
+                lessonTitle.classList.add('lessonTitle');
+                lessonTitle.innerHTML = `${item.contentName}`;
+                console.log(lessonTitle);
+                lesson.appendChild(lessonTitle);
+                let activeItems = document.getElementsByClassName("open");
+                let arrDown = document.getElementsByClassName("down");
+                if (activeItems.length > 0 && arrDown.length > 0) {
+                    activeItems[0].classList.remove("open");
+                    arrDown[0].classList.remove("down");
+                }
+                arr.classList.add("down");
+                panel.classList.add("open");
+                
+                array.forEach((element) => {
+                    if (element.parent_id == item.item_id) {
+                    let article = document.createElement("article");
+                    let title = document.createElement("h2");
+                    let paragraph = document.createElement("p");
+                    paragraph.innerHTML = `${element.paragraph}`;
+                    title.innerHTML = `${element.contentName}`;
+                    
+                    if (element.contentName == "Objetivos") {
+                        article.classList.add("goalsCourse");
+                        article.id = `${element.contentName}`;
+                    } else {
+                        article.classList.add("contentCourseArticle");
+                        article.id = `${element.contentName}`;
+                    }
+                    article.appendChild(title);
+                    article.appendChild(paragraph);
+                    lesson.appendChild(article);
+                    contentCourse.appendChild(lesson);
+                    }
+                });
+                });
+                div.classList.add("tableHeader");
+                div.innerHTML = `<span> ${item.contentName}</span>`;
+                div.prepend(arr);
+                panel.appendChild(div);
+                panel.appendChild(panelBody);
+                container.appendChild(panel);
+            } else {
+                let pIndex = array.findIndex(
+                (obj) => obj.item_id === item.parent_id
+                );
+                let parent = array[pIndex];
+                let subDiv = document.createElement("div");
+                let subDivChild = document.createElement("p");
 
                 let cName = element.contentName.toLowerCase();
                 if (cName.includes("objetivo")) {
